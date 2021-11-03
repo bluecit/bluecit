@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-// Added staff
+import Link from "next/link";
 
 const NavStyles = styled.div`
   ul {
@@ -17,11 +17,21 @@ const Nav = () => {
   return (
     <NavStyles>
       <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Products</li>
-        <li>Services</li>
-        <li>Contact</li>
+        <li>
+          <Link href='/'>Home</Link>
+        </li>
+        <li>
+          <Link href='/about'>About Us </Link>
+        </li>
+        <li>
+          <Link href='/products'>Products</Link>
+        </li>
+        <li>
+          <Link href='/services'>Services</Link>
+        </li>
+        <li>
+          <Link href='/contacts'>Contact</Link>
+        </li>
       </ul>
     </NavStyles>
   );

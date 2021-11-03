@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Nav from "./Nav";
+import Header from "./Header";
+import Showcase from "./Showcase";
 
 const HeaderStyle = styled.div`
   display: flex;
@@ -8,13 +9,13 @@ const HeaderStyle = styled.div`
   align-content: center;
 `;
 
-function Header() {
+function Index() {
   return (
-    <HeaderStyle>
-      <h1>BlueCIT</h1>
-      <Nav />
-    </HeaderStyle>
+    <div>
+      <Header />
+      <Showcase />
+    </div>
   );
 }
 
-export default Header;
+export default Index;
