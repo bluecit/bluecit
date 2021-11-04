@@ -61,7 +61,7 @@ button {
 export const MainContentStyles = styled.div`
   /* max-width: var(--maxWidth); */
   /* margin: auto; */
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
 `;
 
 // export const ContainerStyle = styled.div`

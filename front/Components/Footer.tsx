@@ -6,14 +6,12 @@ const footerYear = new Date();
 
 const FooterStyles = styled.footer`
   padding: var(--paddingLayout);
-  div {
+
+    max-width: 1200px;
     display: grid;
-    div {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-gap: 1rem;
-    }
+    margin: 0 auto;
+    grid-gap: 1rem;
+   
     @media (min-width: 600px) {
       div {
         grid-template-columns: repeat(2, 1fr);
@@ -29,7 +27,7 @@ const FooterStyles = styled.footer`
 export default function Footer() {
   return (
     <FooterStyles>
-      <div>
+      <div className='info'>
         <div>
           <h2>ASAL SOLUTIONS LTD</h2>
           <div>

@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import styled from "styled-components";
 import Nav from "./Nav";
 import Link from "next/link";
@@ -8,11 +8,17 @@ const HeaderStyle = styled.div`
   justify-content: space-between;
   align-content: center;
   padding: 0 15rem;
-  position: fixed;
+  position: sticky;
   width: 100%;
-  background-color: var(--light_1);
+  background-color: transparent;
   top: 0;
   overflow: hidden;
+  &.active {
+    background-color: white;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
   button {
     border: none;
     margin: 2.5rem 0rem;
@@ -28,8 +34,21 @@ const HeaderStyle = styled.div`
 `;
 
 function Header() {
+  const [headerColor, setHeaderColor] = React.useState(false);
+
+  // Check if scrolling
+  const changeHeaderColor = () => {
+    if (window.scrollY > 80) {
+      setHeaderColor(true);
+    } else {
+      setHeaderColor(false);
+    }
+  };
+  typeof window !== "undefined" &&
+    window.addEventListener("scroll", changeHeaderColor);
+
   return (
-    <HeaderStyle>
+    <HeaderStyle className={headerColor ? "active" : ""}>
       <h1>
         <Link href='/'> BlueCIT</Link>
       </h1>
