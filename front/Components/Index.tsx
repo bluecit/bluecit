@@ -13,7 +13,6 @@ function Index() {
   return (
     <div>
       <Header />
-      <Showcase />
     </div>
   );
 }

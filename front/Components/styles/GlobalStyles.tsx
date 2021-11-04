@@ -12,6 +12,7 @@ export const PrimaryTheme = {
 export const DarkTheme = {};
 
 export const GlobalStyles = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @font-face{
 font-family:'Roboto' ;
 src: url('/assets/Roboto-Black.ttf')
@@ -22,9 +23,20 @@ html {
     --secondaryColor : #ED1D7F;
     --black: #000000;
     --grey:#AAAAAA;
+    --greyDark:#AAAAAA;
     --ofWhite:#ededed;
     --maxWidth:1200px;
     --bs: 'box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1)';
+    --dark-color: #29313e;
+    --darker-color: #131b25;
+    --light_1: #fbfbfd;
+    --light_2: #e9ecef;
+    --light_3: #828282;
+    --grey_1: #d4d1d1;
+    --grey_2: #45526c;
+    --grey_3: #333;
+    --menu-font-size: 1.2rem;
+    --paddingLayout:0 15rem;
     box-sizing: border-box;
     font-size: 62.5%;
 }
@@ -32,7 +44,7 @@ html {
     box-sizing: inherit;
 }
 body {
-font-family: 'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-family: 'Lato','Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 padding: 0;
 margin: 0;
 font-size: 1.5rem;
@@ -47,9 +59,9 @@ button {
 }`;
 
 export const MainContentStyles = styled.div`
-  max-width: var(--maxWidth);
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: var(--maxWidth); */
+  /* margin: auto; */
+  margin-top: 10rem;
 `;
 
 // export const ContainerStyle = styled.div`
@@ -58,5 +70,3 @@ export const MainContentStyles = styled.div`
 // padding:0 1rem;
 // max-width: 100%;
 // `
-
-const name = "Ali";

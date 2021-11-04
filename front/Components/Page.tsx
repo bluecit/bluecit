@@ -8,7 +8,8 @@ const Page: React.FC<{ children: any }> = ({ children }) => {
   return (
     <div>
       <GlobalStyles />
-      <Index />
+      <Header />
+
       <MainContentStyles>{children}</MainContentStyles>
       <Footer />
     </div>
