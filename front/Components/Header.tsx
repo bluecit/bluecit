@@ -11,11 +11,13 @@ const HeaderStyle = styled.div`
   position: sticky;
   width: 100%;
   background-color: transparent;
+  /* border-bottom: 1px solid var(--ofWhite); */
   top: 0;
   overflow: hidden;
   &.active {
     background-color: white;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-bottom: none;
     z-index: 1;
   }
 
@@ -50,7 +52,7 @@ function Header() {
   return (
     <HeaderStyle className={headerColor ? "active" : ""}>
       <h1>
-        <Link href='/'> BlueCIT</Link>
+        <Link href='/'> BLUECIT</Link>
       </h1>
       <Nav />
       <button>

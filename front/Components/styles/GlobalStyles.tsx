@@ -20,6 +20,7 @@ format('ttf')
 }
 html {
     --primaryColor: #03256C;
+    --primaryColorDark: #011f5e;
     --secondaryColor : #ED1D7F;
     --black: #000000;
     --grey:#AAAAAA;
