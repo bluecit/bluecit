@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
 import Showcase from "./Showcase";
+import Services from "./Services";
 
 const HeaderStyle = styled.div`
   display: flex;
@@ -12,7 +13,8 @@ const HeaderStyle = styled.div`
 function Index() {
   return (
     <div>
-      <Header />
+      <Showcase />
+      <Services />
     </div>
   );
 }

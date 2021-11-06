@@ -11,7 +11,7 @@ const HeaderStyle = styled.div`
   position: sticky;
   width: 100%;
   background-color: transparent;
-  /* border-bottom: 1px solid var(--ofWhite); */
+  border-bottom: 2px solid var(--ofWhite);
   top: 0;
   overflow: hidden;
   &.active {
