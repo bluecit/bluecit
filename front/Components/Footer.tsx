@@ -35,30 +35,7 @@ export default function Footer() {
     <FooterStyles>
       <div className='footer'>
         <div className='footerAddress'>
-          <h2>ASAL SOLUTIONS LTD</h2>
-          <div className='footerContact'>
-            <svg className='addressIcons'>
-              <use xlinkHref='/assets/sprite.svg#icon-location-pin'></use>
-            </svg>
-            <span>Taleh Rd, Hodon District, Mogadishu - Somalia</span>
-          </div>
-          <div className='footerContact'>
-            <svg className='addressIcons'>
-              <use xlinkHref='/assets/sprite.svg#icon-phone'></use>
-            </svg>
-            <span>
-              <a href='tel:+252852929'>(+252) 852929 </a>or{" "}
-              <a href='tel:+252616965458'>(+252) 616965458 </a>
-            </span>
-          </div>
-          <div className='footerContact'>
-            <svg className='addressIcons'>
-              <use xlinkHref='/assets/sprite.svg#icon-mail'></use>
-            </svg>
-            <span>
-              <a href='mailto:info@asalsolutions.com'>info@asalsolutions.com</a>
-            </span>
-          </div>
+          <h2>BlueCIT Logo</h2>
         </div>
         <div className='footerMenu'>
           <ul>
@@ -129,7 +106,7 @@ export default function Footer() {
       </div>
       <div className='copyright'>
         <p>
-          © 2007 - {footerYear.getFullYear()} <a>Asal Solutions</a>. All Rights
+          © 2018 - {footerYear.getFullYear()} <a>BlueCIT</a>. All Rights
           Reserved.
         </p>
       </div>

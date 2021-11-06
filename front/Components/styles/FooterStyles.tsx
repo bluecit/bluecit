@@ -89,21 +89,6 @@ export const FooterStyles = styled.footer`
     font-size: 1rem;
   }
 
-  .addressIcons {
-    width: 20px;
-    height: 20px;
-    fill: var(--grey_1);
-  }
-
-  .footerContact {
-    display: flex;
-    align-items: center;
-    padding: 0.2rem 0;
-  }
-  .footerContact span {
-    padding-left: 1rem;
-    font-weight: 300;
-  }
   .footerAddress h2 {
     padding-bottom: 0.3rem;
     font-size: 1.4rem;
