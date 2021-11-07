@@ -1,15 +1,16 @@
 import styles from "../styles/Services.module.css";
+import { ServiceStyles } from "./styles/ServiceStyles";
 export default function Services() {
   return (
-    <div className={styles.services}>
+    <ServiceStyles className='services'>
       <h1>Our Services</h1>
       <div className='container'>
-        <div className={styles.cardbox}>
-          <div className={styles.card}>
-            <div className={styles.cardLeft}>
+        <div className='cardbox'>
+          <div className='card'>
+            <div className='cardLeft'>
               <span className='material-icons'>api</span>
             </div>
-            <div className={styles.cardRight}>
+            <div className='cardRight'>
               <h2>
                 <span>Software</span> Solutions
               </h2>
@@ -21,11 +22,11 @@ export default function Services() {
             </div>
           </div>
           {/* Web  */}
-          <div className={styles.card}>
-            <div className={styles.cardLeft}>
+          <div className='card'>
+            <div className='cardLeft'>
               <span className='material-icons'>public</span>
             </div>
-            <div className={styles.cardRight}>
+            <div className='cardRight'>
               <h2>
                 <span>Web</span> Solutions
               </h2>
@@ -38,12 +39,12 @@ export default function Services() {
           </div>
         </div>
         {/* Network */}
-        <div className={styles.cardbox}>
-          <div className={styles.card}>
-            <div className={styles.cardLeft}>
+        <div className='cardbox'>
+          <div className='card'>
+            <div className='cardLeft'>
               <span className='material-icons'>signal_cellular_alt</span>
             </div>
-            <div className={styles.cardRight}>
+            <div className='cardRight'>
               <h2>
                 <span>Network</span> Solutions
               </h2>
@@ -57,11 +58,11 @@ export default function Services() {
 
           {/* Consulting */}
 
-          <div className={styles.card}>
-            <div className={styles.cardLeft}>
+          <div className='card'>
+            <div className='cardLeft'>
               <span className='material-icons'>business_center</span>
             </div>
-            <div className={styles.cardRight}>
+            <div className='cardRight'>
               <h2>
                 <span>Consulting</span> Solutions
               </h2>
@@ -74,6 +75,6 @@ export default function Services() {
           </div>
         </div>
       </div>
-    </div>
+    </ServiceStyles>
   );
 }

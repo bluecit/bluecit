@@ -14,7 +14,6 @@ function Index() {
   return (
     <div>
       <Showcase />
-      <Services />
     </div>
   );
 }
