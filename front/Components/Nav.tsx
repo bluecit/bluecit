@@ -10,7 +10,7 @@ const NavStyles = styled.div`
       padding: 1.5rem;
       font-size: 1.8rem;
       font-weight: 500;
-      color: var(--grey_2);
+      color: var(--greyDark);
       :hover {
         color: var(--secondaryColor);
       }

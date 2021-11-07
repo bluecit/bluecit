@@ -11,7 +11,7 @@ const HeaderStyle = styled.div`
   position: sticky;
   width: 100%;
   background-color: transparent;
-  border-bottom: 2px solid var(--ofWhite);
+  /* border-bottom: 2px solid var(--ofWhite); */
   top: 0;
   overflow: hidden;
   &.active {
@@ -19,6 +19,15 @@ const HeaderStyle = styled.div`
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     border-bottom: none;
     z-index: 1;
+    h1 {
+      color: var(--dark);
+    }
+    li {
+      color: var(--dark);
+    }
+  }
+  h1 {
+    color: var(--greyDark);
   }
 
   button {
@@ -28,9 +37,9 @@ const HeaderStyle = styled.div`
     border-radius: 6rem;
     font-size: 1.5rem;
     color: var(--light_2);
-    background-color: var(--primaryColor);
+    background-color: var(--secondaryColor);
     :hover {
-      color: var(--secondaryColor);
+      color: var(--primaryColor);
     }
   }
 `;
