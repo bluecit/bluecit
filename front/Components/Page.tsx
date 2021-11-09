@@ -9,7 +9,6 @@ const Page: React.FC<{ children: any }> = ({ children }) => {
     <div>
       <GlobalStyles />
       <Header />
-
       <MainContentStyles>{children}</MainContentStyles>
       <Footer />
     </div>

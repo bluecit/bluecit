@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const ServiceStyles = styled.div`
-  .services {
-    background: var(--light_1_1);
-    padding: 1rem 0;
-  }
-  .services h1 {
+  background: var(--light_1_1);
+  padding: var(--paddingLayout);
+
+  h1 {
     color: var(--light_3);
     text-align: center;
   }
