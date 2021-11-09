@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterStyles = styled.footer`
   .footer {
     /* clip-path: ellipse(249% 100% at 57.96% 100%); */
-    clip-path: ellipse(300% 100% at 205% 100%);
+    /* clip-path: ellipse(300% 100% at 205% 100%); */
     display: grid;
     grid-template-columns: 40% 20% 20% 20% 1fr;
     justify-content: center;
