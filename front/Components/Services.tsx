@@ -12,7 +12,7 @@ export default function Services() {
             </div>
             <div className='cardRight'>
               <h2>
-                <span>Software</span> Solutions
+                <span>Software</span> Development
               </h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -28,7 +28,7 @@ export default function Services() {
             </div>
             <div className='cardRight'>
               <h2>
-                <span>Web</span> Solutions
+                <span>Digital</span> Transformation
               </h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -46,7 +46,7 @@ export default function Services() {
             </div>
             <div className='cardRight'>
               <h2>
-                <span>Network</span> Solutions
+                <span>Cybersecurity</span> Solutions
               </h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
