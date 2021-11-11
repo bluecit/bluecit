@@ -3,6 +3,7 @@ import { Code } from "@styled-icons/entypo/";
 import { Transform, Security } from "@styled-icons/material-twotone/";
 import { People } from "@styled-icons/bootstrap/";
 import { ServiceStyles } from "./styles/ServiceStyles";
+import { Network } from "@styled-icons/zondicons/";
 
 export default function Services() {
   return (
@@ -19,8 +20,10 @@ export default function Services() {
               <span>Software</span> Development
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              libero similique tenetur! Officiis ut ipsum, commodi
+              We develop cutting-edge, sophisticated applications that allow an
+              interactive business environment, effective ecommerce space and
+              simplify transactions processes, by connecting customers to
+              consumers using the latest technologies.
             </p>
             <Link href='/services'>
               <a className='btn'>Learn More</a>
@@ -37,8 +40,9 @@ export default function Services() {
               <span>Digital</span> Transformation
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              libero similique tenetur! Officiis ut ipsum, commodi
+              We assist to enhance organizational competitiveness, marketing
+              strategy, operational management, and provide sustainable,
+              transformative business solutions
             </p>
             <Link href='/services'>
               <a className='btn'>Learn More</a>
@@ -54,11 +58,12 @@ export default function Services() {
           </div>
           <div className='cardRight'>
             <h2>
-              <span>Cybersecurity</span> Solutions
+              <span>Penetration</span> Testing
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              libero similique tenetur! Officiis ut ipsum, commodi
+              Identify vulnerabilities and validate security defenses utilizing
+              expertise to enhance your security posture, reduce your risk, and
+              improve your operational efficiency..
             </p>
             <Link href='/services'>
               <a className='btn'>Learn More</a>
@@ -70,15 +75,16 @@ export default function Services() {
 
         <div className='card'>
           <div className='cardLeft'>
-            <People className='service_icon' />
+            <Network className='service_icon' />
           </div>
           <div className='cardRight'>
             <h2>
-              <span>Consulting</span> Solutions
+              <span>Network</span> Visibility Assessment
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              libero similique tenetur! Officiis ut ipsum, commodi
+              Network Visibility Assessments provides a proactive approach to IT
+              security, helping you to detect your network’s weaknesses so you
+              can increase and optimize your security measures..
             </p>
             <Link href='/services'>
               <a className='btn'>Learn More</a>

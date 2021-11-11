@@ -55,8 +55,8 @@ export const ServiceStyles = styled.div`
     ),
     url('/assets/software.jpeg'); */
 
-    /* background: linear-gradient(0deg, rgb(3, 37, 108), rgba(237, 29, 127)); */
-    background: var(--secondaryColor);
+    background: linear-gradient(0deg, rgb(3, 37, 108), rgba(237, 29, 127));
+    /* background: var(--primaryColor); */
     background-size: cover;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
