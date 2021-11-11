@@ -55,8 +55,21 @@ a {
     text-decoration: none;
     color: var(---black)
 }
-button {
+.btn {
     font-family: 'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    /* margin: 2.5rem 0rem; */
+    padding: 1.5rem 4rem;
+    border-radius: 6rem;
+    font-size: 1.5rem;
+    color: var(--light_2);
+    background-color: var(--secondaryColor);
+    &:hover {
+      color: var(--secondaryColor);
+      border: 1px solid var(--secondaryColor);
+      background: transparent;
+    }
+  
 }`;
 
 export const MainContentStyles = styled.div`

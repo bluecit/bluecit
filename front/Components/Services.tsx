@@ -1,5 +1,9 @@
-import styles from "../styles/Services.module.css";
+import Link from "next/link";
+import { Code } from "@styled-icons/entypo/";
+import { Transform, Security } from "@styled-icons/material-twotone/";
+import { People } from "@styled-icons/bootstrap/";
 import { ServiceStyles } from "./styles/ServiceStyles";
+
 export default function Services() {
   return (
     <ServiceStyles className='services'>
@@ -8,7 +12,7 @@ export default function Services() {
         <div className='cardbox'>
           <div className='card'>
             <div className='cardLeft'>
-              <span className='material-icons'>api</span>
+              <Code className='service_icon' />
             </div>
             <div className='cardRight'>
               <h2>
@@ -18,13 +22,15 @@ export default function Services() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloribus libero similique tenetur! Officiis ut ipsum, commodi
               </p>
-              <a className='btn'> Learn More</a>
+              <button className='btn'>
+                <Link href='/services'> Learn More</Link>
+              </button>
             </div>
           </div>
           {/* Web  */}
           <div className='card'>
             <div className='cardLeft'>
-              <span className='material-icons'>public</span>
+              <Transform className='service_icon' />
             </div>
             <div className='cardRight'>
               <h2>
@@ -42,7 +48,7 @@ export default function Services() {
         <div className='cardbox'>
           <div className='card'>
             <div className='cardLeft'>
-              <span className='material-icons'>signal_cellular_alt</span>
+              <Security className='service_icon' />
             </div>
             <div className='cardRight'>
               <h2>
@@ -60,7 +66,7 @@ export default function Services() {
 
           <div className='card'>
             <div className='cardLeft'>
-              <span className='material-icons'>business_center</span>
+              <People className='service_icon' />
             </div>
             <div className='cardRight'>
               <h2>

@@ -39,7 +39,7 @@ const HeaderStyle = styled.div`
     color: var(--light_2);
     background-color: var(--secondaryColor);
     :hover {
-      color: var(--primaryColor);
+      color: var(--secondaryColor);
     }
   }
 `;
@@ -64,7 +64,7 @@ function Header() {
         <Link href='/'> BLUECIT</Link>
       </h1>
       <Nav />
-      <button>
+      <button className='btn'>
         <Link href='/contacts'>Contacts</Link>
       </button>
     </HeaderStyle>

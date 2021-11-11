@@ -47,20 +47,6 @@ const ShowcaseText = styled.div`
     font-size: 4.5rem;
     line-height: 50px;
   }
-  button {
-    border: none;
-    /* margin: 2.5rem 0rem; */
-    padding: 1.5rem 4rem;
-    border-radius: 6rem;
-    font-size: 1.5rem;
-    color: var(--light_2);
-    background-color: var(--secondaryColor);
-    :hover {
-      color: var(--secondaryColor);
-      border: 1px solid var(--secondaryColor);
-      background: transparent;
-    }
-  }
 `;
 const ShowcaseIcon = styled.div``;
 function Showcase() {
@@ -77,7 +63,7 @@ function Showcase() {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, in?
             Fuga labore minus commodi. Laboriosam aliquam eaque porro quia nam
           </p>
-          <button>
+          <button className='btn'>
             <Link href='/contacts'>Explore More</Link>
           </button>
         </ShowcaseText>
