@@ -8,76 +8,81 @@ export default function Services() {
   return (
     <ServiceStyles className='services'>
       <h1>Our Services</h1>
-      <div className='container'>
-        <div className='cardbox'>
-          <div className='card'>
-            <div className='cardLeft'>
-              <Code className='service_icon' />
-            </div>
-            <div className='cardRight'>
-              <h2>
-                <span>Software</span> Development
-              </h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus libero similique tenetur! Officiis ut ipsum, commodi
-              </p>
-              <button className='btn'>
-                <Link href='/services'> Learn More</Link>
-              </button>
-            </div>
+
+      <div className='cardbox'>
+        <div className='card'>
+          <div className='cardLeft'>
+            <Code className='service_icon' />
           </div>
-          {/* Web  */}
-          <div className='card'>
-            <div className='cardLeft'>
-              <Transform className='service_icon' />
-            </div>
-            <div className='cardRight'>
-              <h2>
-                <span>Digital</span> Transformation
-              </h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus libero similique tenetur! Officiis ut ipsum, commodi
-              </p>
-              <a className='btn'> Learn More</a>
-            </div>
+          <div className='cardRight'>
+            <h2>
+              <span>Software</span> Development
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              libero similique tenetur! Officiis ut ipsum, commodi
+            </p>
+            <Link href='/services'>
+              <a className='btn'>Learn More</a>
+            </Link>
           </div>
         </div>
-        {/* Network */}
-        <div className='cardbox'>
-          <div className='card'>
-            <div className='cardLeft'>
-              <Security className='service_icon' />
-            </div>
-            <div className='cardRight'>
-              <h2>
-                <span>Cybersecurity</span> Solutions
-              </h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus libero similique tenetur! Officiis ut ipsum, commodi
-              </p>
-              <a className='btn'> Learn More</a>
-            </div>
+        {/* Web  */}
+        <div className='card'>
+          <div className='cardLeft'>
+            <Transform className='service_icon' />
           </div>
+          <div className='cardRight'>
+            <h2>
+              <span>Digital</span> Transformation
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              libero similique tenetur! Officiis ut ipsum, commodi
+            </p>
+            <Link href='/services'>
+              <a className='btn'>Learn More</a>
+            </Link>
+          </div>
+        </div>
+      </div>
+      {/* Network */}
+      <div className='cardbox'>
+        <div className='card'>
+          <div className='cardLeft'>
+            <Security className='service_icon' />
+          </div>
+          <div className='cardRight'>
+            <h2>
+              <span>Cybersecurity</span> Solutions
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              libero similique tenetur! Officiis ut ipsum, commodi
+            </p>
+            <Link href='/services'>
+              <a className='btn'>Learn More</a>
+            </Link>
+          </div>
+        </div>
 
-          {/* Consulting */}
+        {/* Consulting */}
 
-          <div className='card'>
-            <div className='cardLeft'>
-              <People className='service_icon' />
-            </div>
-            <div className='cardRight'>
-              <h2>
-                <span>Consulting</span> Solutions
-              </h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus libero similique tenetur! Officiis ut ipsum, commodi
-              </p>
-              <a className='btn'> Learn More</a>
-            </div>
+        <div className='card'>
+          <div className='cardLeft'>
+            <People className='service_icon' />
+          </div>
+          <div className='cardRight'>
+            <h2>
+              <span>Consulting</span> Solutions
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              libero similique tenetur! Officiis ut ipsum, commodi
+            </p>
+            <Link href='/services'>
+              <a className='btn'>Learn More</a>
+            </Link>
           </div>
         </div>
       </div>

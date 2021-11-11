@@ -5,9 +5,23 @@ export const ServiceStyles = styled.div`
   padding: var(--paddingLayout);
   padding-bottom: 4rem;
 
+  .btn {
+    background: transparent;
+    border: 1px solid var(--secondaryColor);
+    color: var(--secondaryColor);
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    &:hover {
+      background: var(--primaryColor);
+      border: none;
+      color: var(--light_1);
+    }
+  }
+
   h1 {
     color: var(--light_3);
     text-align: center;
+    margin: 0;
   }
   .cardbox {
     display: grid;
@@ -22,23 +36,15 @@ export const ServiceStyles = styled.div`
     grid-template-columns: 30% 70% 1fr;
   }
   .cardRight {
-    padding: 1.5rem;
+    padding: 2rem 1.2rem;
   }
-  .cardRight a {
-    color: var(--light_1);
-    font-size: 1rem;
-    background: rgba(84, 138, 196);
-    border: none;
-  }
-  .cardRight a:hover {
-    background: var(--primary-color);
-  }
+
   .card h2 {
     color: var(--light_3);
     font-weight: 300;
   }
   .card span {
-    color: var(--primary-color-light);
+    color: var(--primaryColor);
     font-weight: 700;
   }
   .cardLeft {
@@ -50,7 +56,7 @@ export const ServiceStyles = styled.div`
     url('/assets/software.jpeg'); */
 
     /* background: linear-gradient(0deg, rgb(3, 37, 108), rgba(237, 29, 127)); */
-    background: var(--primaryColor);
+    background: var(--secondaryColor);
     background-size: cover;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
