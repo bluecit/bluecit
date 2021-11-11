@@ -4,6 +4,7 @@ export const ServiceStyles = styled.div`
   background: var(--light_1_1);
   padding: var(--paddingLayout);
   padding-bottom: 4rem;
+  padding-top: 4rem;
 
   .btn {
     background: transparent;
@@ -21,18 +22,18 @@ export const ServiceStyles = styled.div`
   h1 {
     color: var(--light_3);
     text-align: center;
-    margin: 0;
   }
   .cardbox {
     display: grid;
     grid-template-columns: 50% 1fr;
-    gap: 2rem;
+    gap: 4rem;
     margin-bottom: 2rem;
   }
   .card {
     background: var(--light_1);
     border-radius: 7px;
     display: grid;
+
     grid-template-columns: 30% 70% 1fr;
   }
   .cardRight {
