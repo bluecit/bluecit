@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const ServiceStyles = styled.div`
   background: var(--light_1_1);
   padding: var(--paddingLayout);
+  padding-bottom: 4rem;
 
   h1 {
     color: var(--light_3);
     text-align: center;
   }
-
   .cardbox {
     display: grid;
     grid-template-columns: 50% 1fr;
@@ -49,15 +49,18 @@ export const ServiceStyles = styled.div`
     ),
     url('/assets/software.jpeg'); */
 
-    background: linear-gradient(
-      0deg,
-      rgb(11, 88, 142),
-      rgba(84, 138, 196, 0.3)
-    );
-
+    /* background: linear-gradient(0deg, rgb(3, 37, 108), rgba(237, 29, 127)); */
+    background: var(--primaryColor);
     background-size: cover;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .service_icon {
+    color: var(--light_1);
+    width: 50%;
   }
   .cardLeft span {
     width: 100%;
