@@ -55,6 +55,9 @@ a {
     text-decoration: none;
     color: var(---black)
 }
+h1{
+  margin:0;
+}
 .btn {
     font-family: 'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: none;
