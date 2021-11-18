@@ -18,8 +18,6 @@ const ShowcaseBackground = styled.div`
   z-index: -1;
   position: relative;
   max-height: 70vh;
-  /* clip-path: ellipse(270% 100% at -49% 0%); */
-  /* clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%); */
 `;
 
 const ShowcaseArea = styled.div`
@@ -35,16 +33,17 @@ const ShowcaseText = styled.div`
   /* background: rgba(0, 0, 0, 0.9); */
 
   color: white;
-
+  text-align: center;
+  width: 80%;
   h1 {
     color: var(--light_2);
-    font-size: 4rem;
+    font-size: 4.5rem;
     line-height: 60px;
     margin-bottom: 2rem;
   }
   p {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
   }
   button {
     margin: 0 auto;
