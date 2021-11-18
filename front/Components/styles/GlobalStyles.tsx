@@ -13,12 +13,8 @@ export const DarkTheme = {};
 
 export const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@font-face{
-font-family:'Roboto' ;
-src: url('/assets/Roboto-Black.ttf')
-format('ttf')
-}
 html {
+    --mainColor:#0c1e32;
     --primaryColor: #03256C;
     --primaryColorDark: #011f5e;
     --secondaryColor : #ED1D7F;

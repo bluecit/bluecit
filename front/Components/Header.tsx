@@ -1,12 +1,14 @@
 import * as React from "react";
 import styled from "styled-components";
-import Nav from "./Nav";
+import Navigation from "./Navigation";
 import Link from "next/link";
-
+import Logo from "../public/images/Bluecit_logo.svg";
+import Image from "next/image";
 const HeaderStyle = styled.div`
+  height: 90px;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   padding: 0 15rem;
   position: sticky;
   width: 100%;
@@ -16,6 +18,9 @@ const HeaderStyle = styled.div`
   overflow: hidden;
   &.active {
     background-color: white;
+    svg {
+      fill: white;
+    }
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     border-bottom: none;
     z-index: 1;
@@ -30,7 +35,7 @@ const HeaderStyle = styled.div`
     color: var(--greyDark);
   }
 
-  button {
+  /* button {
     border: none;
     margin: 2.5rem 0rem;
     padding: 1rem 4rem;
@@ -41,7 +46,7 @@ const HeaderStyle = styled.div`
     :hover {
       color: var(--secondaryColor);
     }
-  }
+  } */
 `;
 
 function Header() {
@@ -60,13 +65,11 @@ function Header() {
 
   return (
     <HeaderStyle className={headerColor ? "active" : ""}>
-      <h1>
-        <Link href='/'> BLUECIT</Link>
-      </h1>
-      <Nav />
-      <button className='btn'>
-        <Link href='/contacts'>Contacts</Link>
-      </button>
+      <Link href='/'>
+        <Image src={Logo} width='220px' height='80px' alt='BlueCIT Logo' />
+      </Link>
+
+      <Navigation />
     </HeaderStyle>
   );
 }

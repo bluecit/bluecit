@@ -8,7 +8,7 @@ export const FooterStyles = styled.footer`
     grid-template-columns: 40% 20% 20% 20% 1fr;
     justify-content: center;
     align-content: center;
-    background: var(--primaryColor);
+    background: var(--mainColor);
     padding: var(--paddingLayout);
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -47,7 +47,7 @@ export const FooterStyles = styled.footer`
   }
 
   .social {
-    background: var(--primaryColor);
+    background: var(--mainColor);
     padding-top: 1rem;
     padding-bottom: 4rem;
     ul {
@@ -72,7 +72,7 @@ export const FooterStyles = styled.footer`
 
   .copyright {
     padding-bottom: 0.5rem;
-    background: var(--primaryColor);
+    background: var(--mainColor);
     color: var(--grey_1);
     text-align: center;
   }

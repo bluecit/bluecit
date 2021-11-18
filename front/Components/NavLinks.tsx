@@ -8,7 +8,7 @@ const NavStyles = styled.div`
     li {
       list-style: none;
       padding: 1.5rem;
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       font-weight: 500;
       color: var(--greyDark);
       :hover {
@@ -16,9 +16,14 @@ const NavStyles = styled.div`
       }
     }
   }
+  @media (max-width: 640px) {
+    ul {
+      display: block;
+    }
+  }
 `;
 
-const Nav = () => {
+const NavLinks = () => {
   return (
     <NavStyles>
       <ul>
@@ -31,9 +36,12 @@ const Nav = () => {
         <li>
           <Link href='/services'>Services</Link>
         </li>
+        <li>
+          <Link href='/contacts'>Contacts</Link>
+        </li>
       </ul>
     </NavStyles>
   );
 };
 
-export default Nav;
+export default NavLinks;
