@@ -49,6 +49,32 @@ const ShowcaseText = styled.div`
     margin: 0 auto;
     display: block;
   }
+  @media (max-width: 1050px) {
+    width: 100% !important;
+    h1 {
+      font-size: 3.5rem;
+    }
+    /* p {
+      font-size: 1.5rem;
+    }
+    button {
+      font-size: 1.5rem;
+    } */
+  }
+  @media (max-width: 850px) {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      display: none;
+    }
+  }
+  @media (max-width: 610px) {
+    width: 100% !important;
+    h1 {
+      font-size: 2rem;
+    }
+  }
 `;
 const ShowcaseIcon = styled.div``;
 function Showcase() {
