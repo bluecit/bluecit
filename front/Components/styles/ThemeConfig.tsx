@@ -1,15 +1,18 @@
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
-export const PrimaryTheme = {
-  colors: {
-    header: "#ddd",
-    footer: "#dddd",
-    body: "#fff",
-  },
+export const darkTheme = {
+  body: "#29313e",
+  text: "#FAFAFA",
+  toggleBorder: "#6B8096",
+  background: "#0c1e32",
 };
-
-export const DarkTheme = {};
+export const lightTheme = {
+  body: "#FFF",
+  text: "#363537",
+  toggleBorder: "#FFF",
+  background: "#e9ecef",
+};
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -21,7 +24,6 @@ html {
     --black: #000000;
     --grey:#AAAAAA;
     --greyDark:#AAAAAA;
-    --ofWhite:#ededed;
     --maxWidth:1200px;
     --bs: 'box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1)';
     --dark-color: #29313e;
@@ -41,11 +43,13 @@ html {
     box-sizing: inherit;
 }
 body {
-font-family: 'Ubuntu', sans-serif;
-padding: 0;
-margin: 0;
-font-size: 1.5rem;
-line-height: 2;
+  background:${({ theme }) => theme.body};
+  color:${({ theme }) => theme.text};
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 2;
 }
 a {
     text-decoration: none;
