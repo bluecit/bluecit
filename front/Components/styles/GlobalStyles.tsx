@@ -12,7 +12,7 @@ export const PrimaryTheme = {
 export const DarkTheme = {};
 
 export const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 html {
     --mainColor:#0c1e32;
     --primaryColor: #03256C;
@@ -41,7 +41,7 @@ html {
     box-sizing: inherit;
 }
 body {
-font-family: 'Lato','Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-family: 'Ubuntu', sans-serif;
 padding: 0;
 margin: 0;
 font-size: 1.5rem;
@@ -55,18 +55,18 @@ h1{
   margin:0;
 }
 .btn {
-    font-family: 'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: none;
     /* margin: 2.5rem 0rem; */
     padding: 1.5rem 4rem;
     border-radius: 6rem;
     font-size: 1.5rem;
-    color: var(--light_2);
-    background-color: var(--secondaryColor);
+  
+    background: transparent;
+    border: 1px solid var(--secondaryColor);
+    color: var(--secondaryColor);
     &:hover {
-      color: var(--secondaryColor);
-      border: 1px solid var(--secondaryColor);
-      background: transparent;
+      color: var(--light_2);
+      background-color: var(--secondaryColor);
     }
   
 }`;
