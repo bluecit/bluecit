@@ -1,4 +1,4 @@
-import { GlobalStyles, MainContentStyles } from "./styles/ThemeConfig";
+import { GlobalStyles } from "./styles/ThemeConfig";
 import * as React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -8,7 +8,7 @@ const Page: React.FC<{ children: any }> = ({ children }) => {
   return (
     <div>
       <Header />
-      <MainContentStyles>{children}</MainContentStyles>
+      {children}
       <Footer />
     </div>
   );

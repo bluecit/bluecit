@@ -65,7 +65,10 @@ body {
 }
 a {
     text-decoration: none;
-    color: var(---black)
+    color: ${({ theme }) => theme.text};
+    &:hover {
+    filter: brightness(-0.5);
+  }
 }
 h1{
   margin:0;
@@ -76,7 +79,6 @@ h1{
     padding: 1.5rem 4rem;
     border-radius: 6rem;
     font-size: 1.5rem;
-  
     background: transparent;
     border: 1px solid var(--secondaryColor);
     color: var(--secondaryColor);
@@ -86,16 +88,3 @@ h1{
     }
   
 }`;
-
-export const MainContentStyles = styled.div`
-  /* max-width: var(--maxWidth); */
-  /* margin: auto; */
-  /* margin-top: 10rem; */
-`;
-
-// export const ContainerStyle = styled.div`
-// width:1200px;
-// margin: 0 auto;
-// padding:0 1rem;
-// max-width: 100%;
-// `

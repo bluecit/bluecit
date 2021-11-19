@@ -16,14 +16,10 @@ const HeaderStyle = styled.div`
   position: sticky;
   width: 100%;
   background-color: transparent;
-  /* border-bottom: 2px solid var(--ofWhite); */
   top: 0;
   overflow: hidden;
   &.active {
     background-color: ${({ theme }) => theme.background};
-    svg {
-      fill: white;
-    }
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     border-bottom: none;
     z-index: 1;
@@ -37,24 +33,12 @@ const HeaderStyle = styled.div`
   h1 {
     color: var(--greyDark);
   }
-
-  /* button {
-    border: none;
-    margin: 2.5rem 0rem;
-    padding: 1rem 4rem;
-    border-radius: 6rem;
-    font-size: 1.5rem;
-    color: var(--light_2);
-    background-color: var(--secondaryColor);
-    :hover {
-      color: var(--secondaryColor);
-    }
-  } */
 `;
 
 function Header() {
   const [headerColor, setHeaderColor] = React.useState(false);
   const { darkMode } = useToggle();
+
   // Check if scrolling
   const changeHeaderColor = () => {
     if (window.scrollY > 80) {
@@ -66,19 +50,13 @@ function Header() {
   typeof window !== "undefined" &&
     window.addEventListener("scroll", changeHeaderColor);
 
-  // Toggle theme
-
   return (
     <HeaderStyle className={headerColor ? "active" : ""}>
       <Link href='/'>
         <Image src={Logo} width='220px' height='80px' alt='BlueCIT Logo' />
       </Link>
       <Navigation />
-      <ToggleThemeIcon
-        onClick={darkMode.toggle}
-        size='50'
-        style={{ position: "absolute", top: 20, right: 20, zIndex: 100 }}
-      />
+      <ToggleThemeIcon onClick={darkMode.toggle} size='50' />
     </HeaderStyle>
   );
 }
