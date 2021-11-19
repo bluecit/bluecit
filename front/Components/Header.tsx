@@ -56,7 +56,7 @@ function Header() {
         <Image src={Logo} width='220px' height='80px' alt='BlueCIT Logo' />
       </Link>
       <Navigation />
-      <ToggleThemeIcon onClick={darkMode.toggle} size='50' />
+      <ToggleThemeIcon onClick={darkMode.toggle} size='40' />
     </HeaderStyle>
   );
 }
