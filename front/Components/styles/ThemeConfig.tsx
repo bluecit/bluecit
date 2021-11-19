@@ -2,18 +2,18 @@ import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 export const darkTheme = {
-  body: "#29313e",
+  body: "#0c1e32",
   text: "#FAFAFA",
-  toggleBorder: "#6B8096",
+  toggleBorder: "#45526c",
   background: "#0c1e32",
   logo: {
     backgroundImage: `url("/images/bluecit_logo.svg")`,
   },
 };
 export const lightTheme = {
-  body: "#fbfbfd",
+  body: "#fff",
   text: "#363537",
-  toggleBorder: "#FFF",
+  toggleBorder: "#828282",
   background: "#fff",
   logo: {
     backgroundImage: `url("/images/bluecit_web_logo.png")`,

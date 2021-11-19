@@ -12,6 +12,7 @@ export const FooterStyles = styled.footer`
     padding: var(--paddingLayout);
     padding-top: 4rem;
     padding-bottom: 4rem;
+    border-top: 1px solid ${({ theme }) => theme.toggleBorder};
   }
 
   /* @media only screen and (max-width: 1200px) {

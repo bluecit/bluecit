@@ -33,8 +33,8 @@ export const ServiceStyles = styled.div`
     background: ${({ theme }) => theme.background};
     border-radius: 7px;
     display: grid;
-
     grid-template-columns: 30% 70% 1fr;
+    border: 1px solid var(--secondaryColor);
   }
   .cardRight {
     padding: 2rem 1.2rem;
