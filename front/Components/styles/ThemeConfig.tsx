@@ -6,12 +6,18 @@ export const darkTheme = {
   text: "#FAFAFA",
   toggleBorder: "#6B8096",
   background: "#0c1e32",
+  logo: {
+    backgroundImage: `url("/images/bluecit_logo.svg")`,
+  },
 };
 export const lightTheme = {
   body: "#fbfbfd",
   text: "#363537",
   toggleBorder: "#FFF",
   background: "#fff",
+  logo: {
+    backgroundImage: `url("/images/bluecit_web_logo.png")`,
+  },
 };
 
 export const GlobalStyles = createGlobalStyle`
