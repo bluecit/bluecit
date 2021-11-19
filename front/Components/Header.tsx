@@ -4,6 +4,9 @@ import Navigation from "./Navigation";
 import Link from "next/link";
 import Logo from "../public/images/Bluecit_logo.svg";
 import Image from "next/image";
+import { DarkTheme as ToggleThemeIcon } from "@styled-icons/fluentui-system-filled";
+import { useToggle } from "../utils/globalState";
+
 const HeaderStyle = styled.div`
   height: 90px;
   display: flex;
@@ -51,7 +54,7 @@ const HeaderStyle = styled.div`
 
 function Header() {
   const [headerColor, setHeaderColor] = React.useState(false);
-
+  const { darkMode } = useToggle();
   // Check if scrolling
   const changeHeaderColor = () => {
     if (window.scrollY > 80) {
@@ -63,13 +66,19 @@ function Header() {
   typeof window !== "undefined" &&
     window.addEventListener("scroll", changeHeaderColor);
 
+  // Toggle theme
+
   return (
     <HeaderStyle className={headerColor ? "active" : ""}>
       <Link href='/'>
         <Image src={Logo} width='220px' height='80px' alt='BlueCIT Logo' />
       </Link>
-
       <Navigation />
+      <ToggleThemeIcon
+        onClick={darkMode.toggle}
+        size='50'
+        style={{ position: "absolute", top: 20, right: 20, zIndex: 100 }}
+      />
     </HeaderStyle>
   );
 }

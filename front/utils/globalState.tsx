@@ -1,23 +1,23 @@
 import * as React from "react";
 import { ThemeProvider } from "styled-components";
+import useDarkMode from "use-dark-mode";
 const LocalStateContext = React.createContext(null);
 const LocalStateProvider = LocalStateContext.Provider;
-import { DarkTheme as ToggleThemeIcon } from "@styled-icons/fluentui-system-filled";
 import { lightTheme, darkTheme } from "../Components/styles/ThemeConfig";
 
-export const ToggleTheme = () => {
-  const [theme, setTheme] = React.useState("light");
+export const ToggleThemeStateProvider = ({ children }) => {
+  const darkMode = useDarkMode(true);
 
-  const toggleTheme = () => {
-    console.log("You clicked me");
-    theme == "light" ? setTheme("dark") : setTheme("light");
-  };
+  const theme = darkMode.value ? darkTheme : lightTheme;
+  console.log({ darkMode, theme });
+  return (
+    <LocalStateProvider value={{ darkMode, theme }}>
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+    </LocalStateProvider>
+  );
+};
 
-  <ThemeProvider theme={theme == "light" ? lightTheme : darkTheme}>
-    <ToggleThemeIcon
-      onClick={toggleTheme}
-      size='50'
-      style={{ position: "absolute", top: 20, right: 20, zIndex: 100 }}
-    />
-  </ThemeProvider>;
+export const useToggle = () => {
+  const all = React.useContext(LocalStateContext);
+  return all;
 };
