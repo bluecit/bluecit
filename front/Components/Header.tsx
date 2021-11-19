@@ -9,7 +9,7 @@ const HeaderStyle = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15rem;
+  padding: var(--paddingLayout);
   position: sticky;
   width: 100%;
   background-color: transparent;

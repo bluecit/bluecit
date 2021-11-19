@@ -44,6 +44,12 @@ html {
     --paddingLayout:0 15rem;
     box-sizing: border-box;
     font-size: 62.5%;
+    @media(max-width:1024px){
+      --paddingLayout:0 5rem;
+    }
+    @media(max-width:1200px){
+      --paddingLayout:0 5rem;
+    }
 }
 *,*:after, *:before {
     box-sizing: inherit;
