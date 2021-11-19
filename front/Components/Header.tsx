@@ -17,7 +17,7 @@ const HeaderStyle = styled.div`
   top: 0;
   overflow: hidden;
   &.active {
-    background-color: white;
+    background-color: ${({ theme }) => theme.background};
     svg {
       fill: white;
     }

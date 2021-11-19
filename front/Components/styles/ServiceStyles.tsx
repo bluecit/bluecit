@@ -30,7 +30,7 @@ export const ServiceStyles = styled.div`
     margin-bottom: 2rem;
   }
   .card {
-    background: var(--light_1);
+    background: ${({ theme }) => theme.background};
     border-radius: 7px;
     display: grid;
 
@@ -45,7 +45,7 @@ export const ServiceStyles = styled.div`
     font-weight: 300;
   }
   .card span {
-    color: var(--primaryColor);
+    color: ${({ theme }) => theme.text};
     font-weight: 700;
   }
   .cardLeft {

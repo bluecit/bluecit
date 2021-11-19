@@ -8,7 +8,7 @@ export const FooterStyles = styled.footer`
     grid-template-columns: 40% 20% 20% 20% 1fr;
     justify-content: center;
     align-content: center;
-    background: var(--mainColor);
+    background: ${({ theme }) => theme.background};
     padding: var(--paddingLayout);
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -32,11 +32,11 @@ export const FooterStyles = styled.footer`
     }
   }
   .footerMenu {
-    color: #fff;
+    color: ${({ theme }) => theme.text};
     padding-top: 1rem;
     li {
       list-style: none;
-      color: var(--grey_1);
+      color: var(--grey_2);
       font-weight: 400;
       font-size: 1.5rem;
     }
@@ -47,7 +47,7 @@ export const FooterStyles = styled.footer`
   }
 
   .social {
-    background: var(--mainColor);
+    background: ${({ theme }) => theme.background};
     padding-top: 1rem;
     padding-bottom: 4rem;
     ul {
@@ -72,8 +72,8 @@ export const FooterStyles = styled.footer`
 
   .copyright {
     padding-bottom: 0.5rem;
-    background: var(--mainColor);
-    color: var(--grey_1);
+    background: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.text};
     text-align: center;
   }
   .copyright p {
