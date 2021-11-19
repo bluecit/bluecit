@@ -34,7 +34,7 @@ export const ServiceStyles = styled.div`
     border-radius: 7px;
     display: grid;
     grid-template-columns: 30% 70% 1fr;
-    border: 1px solid var(--secondaryColor);
+    /* border: 1px solid var(--secondaryColor); */
   }
   .cardRight {
     padding: 2rem 1.2rem;

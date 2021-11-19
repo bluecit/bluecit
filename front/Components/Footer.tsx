@@ -1,29 +1,13 @@
 import Link from "next/link";
-import styled from "styled-components";
+
+import { FooterStyles } from "./styles/FooterStyles";
 import {
   TwitterWithCircle,
   FacebookWithCircle,
   GithubWithCircle,
   InstagramWithCircle,
 } from "@styled-icons/entypo-social/";
-import { FooterStyles } from "./styles/FooterStyles";
-
-import { StyledIconBase } from "@styled-icons/styled-icon";
-
-export const IconStyleWrapper = styled.div`
-  ${StyledIconBase} {
-    color: red;
-    /* icon styles go here */
-  }
-`;
-
-const TwitterIcon = styled(TwitterWithCircle)`
-  color: ${({ theme }) => theme.text};
-  size: "45";
-  &:hover {
-    filter: brightness(0.5);
-  }
-`;
+import { FacebookCircle } from "@styled-icons/boxicons-logos";
 
 const footerYear = new Date();
 export default function Footer() {
@@ -80,29 +64,29 @@ export default function Footer() {
         <ul>
           <li>
             <a href='https://github.com/bluecit'>
-              <GithubWithCircle />
+              <GithubWithCircle size='50' />
             </a>
           </li>
           <li>
             <a href='https://twitter.com/BlueCIT_'>
-              <TwitterIcon />
+              <TwitterWithCircle size='50' />
             </a>
           </li>
           <li>
             <a href='https://www.facebook.com/Bluecit.io'>
-              <FacebookWithCircle />
+              <FacebookWithCircle size='50' />
             </a>
           </li>
           <li>
             <a href='https://www.instagram.com/bluecit_io'>
-              <InstagramWithCircle />
+              <InstagramWithCircle size='50' />
             </a>
           </li>
         </ul>
       </div>
       <div className='copyright'>
         <p>
-          © 2018 - {footerYear.getFullYear()} <a>BlueCIT</a>. All Rights
+          © 2018 - {footerYear.getFullYear()} <span>BlueCIT</span>. All Rights
           Reserved.
         </p>
       </div>
