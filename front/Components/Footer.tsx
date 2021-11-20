@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { FooterStyles } from "./styles/FooterStyles";
+import { FooterStyles } from "@/styles/FooterStyles";
 import {
   TwitterWithCircle,
   FacebookWithCircle,

@@ -1,17 +1,24 @@
 import * as React from "react";
 import { ThemeProvider } from "styled-components";
 import useDarkMode from "use-dark-mode";
-const LocalStateContext = React.createContext(null);
-const LocalStateProvider = LocalStateContext.Provider;
-import { lightTheme, darkTheme } from "../Components/styles/ThemeConfig";
+import { lightTheme, darkTheme } from "@/styles/ThemeConfig";
 
-export const ToggleThemeStateProvider = ({ children }) => {
+interface ToggleTypes {
+  darkMode: {};
+  theme?: {};
+}
+const LocalStateContext = React.createContext<ToggleTypes | null>(null);
+const LocalStateProvider = LocalStateContext.Provider;
+
+export const ToggleThemeStateProvider: React.FC<{ children: any }> = ({
+  children,
+}) => {
   const darkMode = useDarkMode(true);
 
   const theme = darkMode.value ? darkTheme : lightTheme;
   console.log({ darkMode, theme });
   return (
-    <LocalStateProvider value={{ darkMode, theme }}>
+    <LocalStateProvider value={{ darkMode }}>
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </LocalStateProvider>
   );

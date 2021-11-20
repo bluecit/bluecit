@@ -1,10 +1,8 @@
 import * as React from "react";
-import styled from "styled-components";
-import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 import { slide as Menu } from "react-burger-menu";
 import { SCREENS } from "./Responsive";
-import { mobileNavStyles } from "./styles/MobileNavStyles";
+import { mobileNavStyles } from "@/styles/MobileNavStyles";
 import NavLinks from "./NavLinks";
 
 const Navigation = () => {

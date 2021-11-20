@@ -1,8 +1,8 @@
 import type { AppProps } from "next/app";
 import * as React from "react";
-import Page from "../Components/Page";
-import { ToggleThemeStateProvider } from "../utils/globalState";
-import { GlobalStyles } from "../Components/styles/ThemeConfig";
+import Page from "@/components/Page";
+import { ToggleThemeStateProvider } from "@/utils/globalState";
+import { GlobalStyles } from "@/styles/ThemeConfig";
 
 const toggleIconStyle = {
   position: "absolute",
