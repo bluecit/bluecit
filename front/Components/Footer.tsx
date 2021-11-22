@@ -10,16 +10,30 @@ import {
 import { FacebookCircle } from "@styled-icons/boxicons-logos";
 import { somaliMessage, globalMessage } from "@/utils/getDay";
 
+export interface CountryTypes {
+  city: string;
+  country: string;
+  hostname: string;
+  ip: string;
+  loc: string;
+  org: string;
+  postal: string;
+  region: string;
+  timezone: string;
+}
 const footerYear = new Date();
 export default function Footer() {
   const [countMessage, setCountMessage] = React.useState(0);
-  const [countryInfo, setCountryInfo] = React.useState(null);
+  const [country, setCountry] = React.useState<string | null>(null);
   const messages = [globalMessage, somaliMessage];
-
   const fetchData = async () => {
-    const res = await fetch(`https://ipinfo.io?token=1ceea5892ba208`);
+    const res = await fetch(
+      `https://ipinfo.io?token=${process.env.NEXT_PUBLIC_IPINFO_TOKEN}`
+    );
     const countryData = await res.json();
-    console.log(countryData);
+    if (countryData) {
+      setCountry(countryData.country);
+    }
     return countryData;
   };
   React.useEffect(() => {
@@ -28,12 +42,8 @@ export default function Footer() {
     //   setCountMessage(currentIdx + 1);
     // }, 5000);
 
-    const countryData = fetchData();
-    // setCountryInfo();
+    fetchData();
   }, []);
-
-  // console.log(countryData);
-  // let textThatChanges = messages[countMessage % messages.length];
 
   return (
     <FooterStyles>
@@ -109,10 +119,7 @@ export default function Footer() {
         </ul>
       </div>
       <div className='message'>
-        <span className='fade-in'>{globalMessage}</span>
-        <br />
-        {countryInfo}
-        <span className='fade-out'>{somaliMessage}</span>
+        {country == "SO" ? <p>{somaliMessage}</p> : <p>{globalMessage} </p>}
       </div>
       <div className='copyright'>
         <p>
