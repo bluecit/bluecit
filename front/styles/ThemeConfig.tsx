@@ -77,7 +77,9 @@ h1 {
     font-size: 4rem;
     margin: 2rem;
 }
-
+p{
+  margin-bottom:1rem;
+}
 .btn {
     border: none;
     /* margin: 2.5rem 0rem; */

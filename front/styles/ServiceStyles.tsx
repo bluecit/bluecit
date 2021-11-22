@@ -37,7 +37,8 @@ export const ServiceStyles = styled.div`
     font-weight: 300;
   }
   .card span {
-    color: ${({ theme }) => theme.text};
+    /* color: ${({ theme }) => theme.text}; */
+    color: var(--secondaryColor);
     font-weight: 700;
   }
   .cardLeft {
