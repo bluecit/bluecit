@@ -99,4 +99,27 @@ export const FooterStyles = styled.footer`
   .footerContact a {
     color: var(--grey_1);
   }
+
+  .fade-in {
+    animation: fadeInn 15s alternate infinite;
+  }
+  .fade-out {
+    animation: fadeOutt 15s alternate infinite;
+  }
+  @keyframes fadeInn {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes fadeOutt {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;

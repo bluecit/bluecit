@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import * as React from "react";
 import { FooterStyles } from "@/styles/FooterStyles";
 import {
   TwitterWithCircle,
@@ -8,9 +8,33 @@ import {
   InstagramWithCircle,
 } from "@styled-icons/entypo-social/";
 import { FacebookCircle } from "@styled-icons/boxicons-logos";
+import { somaliMessage, globalMessage } from "@/utils/getDay";
+
+export async function getStaticProps() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+  const countryData = await res.json();
+  console.log(countryData);
+
+  return {
+    props: { countryData },
+  };
+}
 
 const footerYear = new Date();
-export default function Footer() {
+export default function Footer({ countryData }) {
+  const [countMessage, setCountMessage] = React.useState(0);
+  const messages = [globalMessage, somaliMessage];
+
+  // React.useEffect(() => {
+  //   setInterval(() => {
+  //     let currentIdx = countMessage;
+  //     setCountMessage(currentIdx + 1);
+  //   }, 5000);
+  // }, []);
+
+  console.log(countryData);
+  // let textThatChanges = messages[countMessage % messages.length];
+
   return (
     <FooterStyles>
       <div className='footer'>
@@ -83,6 +107,11 @@ export default function Footer() {
             </a>
           </li>
         </ul>
+      </div>
+      <div className='copyright'>
+        <span className='fade-in'>{globalMessage}</span>
+        <br />
+        <span className='fade-out'>{somaliMessage}</span>
       </div>
       <div className='copyright'>
         <p>

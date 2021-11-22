@@ -6,7 +6,7 @@ import { mobileNavStyles } from "@/styles/MobileNavStyles";
 import NavLinks from "./NavLinks";
 
 const Navigation = () => {
-  const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
+  const isMobile = useMediaQuery({ maxWidth: SCREENS.md });
   if (isMobile) {
     return (
       <Menu styles={mobileNavStyles} right>

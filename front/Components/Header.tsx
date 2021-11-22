@@ -2,8 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import Navigation from "./Navigation";
 import Link from "next/link";
-import Logo from "@/public/images/Bluecit_logo.svg";
-import Image from "next/image";
+import Logo from "@/components/Logo";
 import { DarkTheme as ToggleThemeIcon } from "@styled-icons/fluentui-system-filled";
 import { useToggle } from "@/utils/globalState";
 
@@ -33,6 +32,9 @@ const HeaderStyle = styled.div`
   h1 {
     color: var(--greyDark);
   }
+  @media (max-width: 768px) {
+    justify-content: flex-end;
+  }
 `;
 
 function Header() {
@@ -54,7 +56,7 @@ function Header() {
     <HeaderStyle className={headerColor ? "active" : ""}>
       <Link href='/'>
         <a>
-          <Image src={Logo} width='220px' height='80px' alt='BlueCIT Logo' />
+          <Logo width='50%' fill={darkMode.value ? "white" : "#03256C"} />
         </a>
       </Link>
       <Navigation />
