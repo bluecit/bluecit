@@ -7,8 +7,11 @@ import {
   GithubWithCircle,
   InstagramWithCircle,
 } from "@styled-icons/entypo-social/";
-import { FacebookCircle } from "@styled-icons/boxicons-logos";
+import { EmailOutline } from "@styled-icons/evaicons-outline/";
 import { somaliMessage, globalMessage } from "@/utils/getDay";
+import { useToggle } from "@/utils/globalState";
+import Logo from "./Logo";
+import styled from "styled-components";
 
 export interface CountryTypes {
   city: string;
@@ -21,6 +24,16 @@ export interface CountryTypes {
   region: string;
   timezone: string;
 }
+
+const ContactStyle = styled.p`
+  font-size: 2rem;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text};
+  padding-left: 1rem;
+  a {
+    padding-left: 1rem;
+  }
+`;
 const footerYear = new Date();
 export default function Footer() {
   const [countMessage, setCountMessage] = React.useState(0);
@@ -44,24 +57,29 @@ export default function Footer() {
 
     fetchData();
   }, []);
+  const { darkMode } = useToggle();
 
   return (
     <FooterStyles>
       <div className='footer'>
-        <div className='footerAddress'>
-          <h2>BlueCIT Logo</h2>
+        <div>
+          <a>
+            <Logo width='52%' fill={darkMode.value ? "white" : "#03256C"} />
+          </a>
+
+          <ContactStyle>
+            <EmailOutline size='35' />
+            <a type='email'>contact@bluecit.io</a>
+          </ContactStyle>
         </div>
         <div className='footerMenu'>
           <ul>
             <h4>About</h4>
             <li>
-              <a>Companay</a>
+              <a>BlueCIT</a>
             </li>
             <li>
               <a>Careers</a>
-            </li>
-            <li>
-              <a>Contacts</a>
             </li>
           </ul>
         </div>
@@ -69,13 +87,10 @@ export default function Footer() {
           <ul>
             <h4>Products</h4>
             <li>
-              <a>Companay</a>
+              <a>RAADI App</a>
             </li>
             <li>
-              <a>Careers</a>
-            </li>
-            <li>
-              <a>Contacts</a>
+              <a>Services</a>
             </li>
           </ul>
         </div>
@@ -83,13 +98,10 @@ export default function Footer() {
           <ul>
             <h4>Insights</h4>
             <li>
-              <a>Companay</a>
+              <a>Blog</a>
             </li>
             <li>
-              <a>Careers</a>
-            </li>
-            <li>
-              <a>Contacts</a>
+              <a>Contact Us</a>
             </li>
           </ul>
         </div>

@@ -11,15 +11,14 @@ export const FooterStyles = styled.footer`
     background: ${({ theme }) => theme.background};
     padding: var(--paddingLayout);
     padding-top: 4rem;
-    padding-bottom: 4rem;
-    border-top: 1px solid ${({ theme }) => theme.toggleBorder};
+    /* padding-bottom: 2rem; */
   }
 
-  /* @media only screen and (max-width: 1200px) {
-  .footer {
-    grid-template-columns: 40% 60%;
+  @media only screen and (max-width: 1200px) {
+    .footer {
+      grid-template-columns: 40% 60%;
+    }
   }
-} */
 
   @media only screen and (max-width: 960px) {
     .footer {
@@ -37,7 +36,7 @@ export const FooterStyles = styled.footer`
     padding-top: 1rem;
     li {
       list-style: none;
-      color: var(--grey_2);
+      /* color: var(--grey_2); */
       font-weight: 400;
       font-size: 1.5rem;
     }
@@ -49,7 +48,6 @@ export const FooterStyles = styled.footer`
 
   .social {
     background: ${({ theme }) => theme.background};
-    padding-top: 1rem;
     padding-bottom: 1.5rem;
     ul {
       display: flex;
@@ -62,11 +60,7 @@ export const FooterStyles = styled.footer`
       }
     }
   }
-  .social .social ul .socialIcon {
-    width: 40px;
-    height: 40px;
-    fill: var(--grey_1);
-  }
+
   .socialIcon:hover {
     fill: var(--light_1);
   }
@@ -91,17 +85,7 @@ export const FooterStyles = styled.footer`
   .copyright a {
     color: #fff;
   }
-  .footerAddress {
-    padding-top: 1rem;
-    color: var(--grey_1);
-    font-size: 1rem;
-  }
 
-  .footerAddress h2 {
-    padding-bottom: 0.3rem;
-    font-size: 1.4rem;
-    color: #fff;
-  }
   .footerContact a {
     color: var(--grey_1);
   }
