@@ -12,17 +12,9 @@ export const ServiceStyles = styled.div`
     color: var(--secondaryColor);
     padding-top: 1.1rem;
     padding-bottom: 1.1rem;
-    &:hover {
-      background: var(--primaryColor);
-      border: none;
-      color: var(--light_1);
-    }
+    margin-top: 2rem;
   }
 
-  h1 {
-    color: var(--light_3);
-    text-align: center;
-  }
   .cardbox {
     display: grid;
     grid-template-columns: 50% 1fr;

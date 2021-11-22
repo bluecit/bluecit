@@ -38,6 +38,9 @@ html {
     --paddingLayout:0 15rem;
     box-sizing: border-box;
     font-size: 62.5%;
+    padding:0;
+    margin:0;
+  
     @media(max-width:1024px){
       --paddingLayout:0 5rem;
     }
@@ -47,13 +50,14 @@ html {
 }
 *,*:after, *:before {
     box-sizing: inherit;
+    padding:0;
+    margin:0;
+    
 }
 body {
   background:${({ theme }) => theme.body};
   color:${({ theme }) => theme.text};
   font-family: 'Ubuntu', sans-serif;
-  padding: 0;
-  margin: 0;
   font-size: 1.5rem;
   line-height: 2;
 }
@@ -65,9 +69,15 @@ a {
     filter: brightness(-0.5);
   }
 }
-h1{
-  margin:0;
+
+h1 {
+    color: ${({ theme }) => theme.text};
+    text-align: center;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 2rem;
 }
+
 .btn {
     border: none;
     /* margin: 2.5rem 0rem; */
@@ -75,6 +85,7 @@ h1{
     border-radius: 6rem;
     font-size: 1.5rem;
     background: transparent;
+    margin-top:2rem;
     border: 1px solid var(--secondaryColor);
     color: var(--secondaryColor);
     &:hover {

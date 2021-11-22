@@ -50,7 +50,7 @@ export const FooterStyles = styled.footer`
   .social {
     background: ${({ theme }) => theme.background};
     padding-top: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 1.5rem;
     ul {
       display: flex;
       justify-content: center;
@@ -73,6 +73,12 @@ export const FooterStyles = styled.footer`
 
   .copyright {
     padding-bottom: 0.5rem;
+    background: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.text};
+    text-align: center;
+  }
+  .message {
+    padding-bottom: 0.2rem;
     background: ${({ theme }) => theme.background};
     color: ${({ theme }) => theme.text};
     text-align: center;
@@ -101,10 +107,10 @@ export const FooterStyles = styled.footer`
   }
 
   .fade-in {
-    animation: fadeInn 15s alternate infinite;
+    animation: fadeInn 10s alternate infinite 30s;
   }
   .fade-out {
-    animation: fadeOutt 15s alternate infinite;
+    animation: fadeOutt 10s alternate infinite 30s;
   }
   @keyframes fadeInn {
     from {

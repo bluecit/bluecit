@@ -10,29 +10,29 @@ import {
 import { FacebookCircle } from "@styled-icons/boxicons-logos";
 import { somaliMessage, globalMessage } from "@/utils/getDay";
 
-export async function getStaticProps() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
-  const countryData = await res.json();
-  console.log(countryData);
-
-  return {
-    props: { countryData },
-  };
-}
-
 const footerYear = new Date();
-export default function Footer({ countryData }) {
+export default function Footer() {
   const [countMessage, setCountMessage] = React.useState(0);
+  const [countryInfo, setCountryInfo] = React.useState(null);
   const messages = [globalMessage, somaliMessage];
 
-  // React.useEffect(() => {
-  //   setInterval(() => {
-  //     let currentIdx = countMessage;
-  //     setCountMessage(currentIdx + 1);
-  //   }, 5000);
-  // }, []);
+  const fetchData = async () => {
+    const res = await fetch(`https://ipinfo.io?token=1ceea5892ba208`);
+    const countryData = await res.json();
+    console.log(countryData);
+    return countryData;
+  };
+  React.useEffect(() => {
+    // setInterval(() => {
+    //   let currentIdx = countMessage;
+    //   setCountMessage(currentIdx + 1);
+    // }, 5000);
 
-  console.log(countryData);
+    const countryData = fetchData();
+    // setCountryInfo();
+  }, []);
+
+  // console.log(countryData);
   // let textThatChanges = messages[countMessage % messages.length];
 
   return (
@@ -108,9 +108,10 @@ export default function Footer({ countryData }) {
           </li>
         </ul>
       </div>
-      <div className='copyright'>
+      <div className='message'>
         <span className='fade-in'>{globalMessage}</span>
         <br />
+        {countryInfo}
         <span className='fade-out'>{somaliMessage}</span>
       </div>
       <div className='copyright'>
