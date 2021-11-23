@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-const NavStyles = styled.div`
+export const NavStyles = styled.div`
   ul {
     display: flex;
     li {
@@ -22,6 +22,12 @@ const NavStyles = styled.div`
     }
   }
 `;
+
+// const Mobile = styled.div`
+//   position: relative;
+//   background: ${(props) => props.background};
+//   color: ;
+// `;
 
 const NavLinks = () => {
   return (

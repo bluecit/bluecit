@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
-
+import { StyleProps } from "@/components/TypeDefinations";
 export const darkTheme = {
   body: "#102338",
   text: "#FAFAFA",
@@ -14,7 +14,7 @@ export const lightTheme = {
   background: "#fff",
 };
 
-export const GlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle<StyleProps>`
 
 html {
     --mainColor:#0c1e32;
@@ -64,14 +64,14 @@ body {
 
 a {
     text-decoration: none;
-    color: ${({ theme }) => theme.text};
+    color:${({ theme }) => theme.text};
     &:hover {
     filter: brightness(-0.5);
   }
 }
 
 h1 {
-    color: ${({ theme }) => theme.text};
+  color:${({ theme }) => theme.text};
     text-align: center;
     font-weight: 700;
     font-size: 4rem;

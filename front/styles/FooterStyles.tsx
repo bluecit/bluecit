@@ -5,7 +5,7 @@ export const FooterStyles = styled.footer`
     /* clip-path: ellipse(249% 100% at 57.96% 100%); */
     /* clip-path: ellipse(300% 100% at 205% 100%); */
     display: grid;
-    grid-template-columns: 40% 20% 20% 20% 1fr;
+    grid-template-columns: 25% 25% 25% 25% 1fr;
     justify-content: center;
     align-content: center;
     background: ${({ theme }) => theme.background};
@@ -17,6 +17,7 @@ export const FooterStyles = styled.footer`
   @media only screen and (max-width: 1200px) {
     .footer {
       grid-template-columns: 40% 60%;
+      align-items: center;
     }
   }
 
