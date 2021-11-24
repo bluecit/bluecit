@@ -9,6 +9,7 @@ import { useToggle } from "@/utils/globalState";
 const HeaderStyle = styled.div`
   height: 90px;
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   padding: var(--paddingLayout);

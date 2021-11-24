@@ -42,7 +42,7 @@ html {
     margin:0;
   
     @media(max-width:1024px){
-      --paddingLayout:0 5rem;
+      --paddingLayout:0 2rem;
     }
     @media(max-width:1200px){
       --paddingLayout:0 5rem;
