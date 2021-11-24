@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 // import { slide as Menu } from "react-burger-menu";
 import { SCREENS } from "./Responsive";
 import { Close as CloseIcon } from "@styled-icons/evil/";
@@ -9,7 +9,8 @@ import { mobileNavStyles } from "@/styles/MobileNavStyles";
 import NavLinks, { NavStyles, MobileStyles } from "./NavLinks";
 
 const Navigation = () => {
-  const isMobile = useMediaQuery({ maxWidth: SCREENS.md });
+  // const isMobile = useMediaQuery({ maxWidth: SCREENS.md });
+  const isMobile = false;
   const [isClicked, setIsClicked] = React.useState(false);
   const handleClick = () => {
     setIsClicked(!isClicked);

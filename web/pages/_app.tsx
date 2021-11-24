@@ -11,18 +11,18 @@ const toggleIconStyle = {
   zIndex: 100,
 };
 function MyApp({ Component, pageProps }: AppProps) {
-  // const [isMounted, setIsMounted] = React.useState(false);
-  // React.useEffect(() => {
-  //   setIsMounted(true);
-  // }, []);
+  const [isMounted, setIsMounted] = React.useState(false);
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <ToggleThemeStateProvider>
       <GlobalStyles />
-      {/* <Page>{isMounted && <Component {...pageProps} />}</Page> */}
-      <Page>
+      {/* <Page>
         <Component {...pageProps} />
-      </Page>
+      </Page> */}
+      <Page>{isMounted && <Component {...pageProps} />}</Page>
     </ToggleThemeStateProvider>
   );
 }
