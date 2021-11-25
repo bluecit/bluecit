@@ -56,7 +56,7 @@ function Header() {
   return (
     <HeaderStyle className={headerColor ? "active" : ""}>
       <Link href='/'>
-        <a>
+        <a style={{ paddingLeft: "2rem", paddingTop: "1rem" }}>
           <Logo width='50%' fill={darkMode.value ? "white" : "#03256C"} />
         </a>
       </Link>
