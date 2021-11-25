@@ -11,36 +11,29 @@ export const NavStyles = styled.div`
       font-size: 1.7rem;
       font-weight: 500;
       color: ${({ theme }) => theme.text};
-      :hover {
+      /* border-top: 2px solid transparent; */
+      a:hover {
         color: var(--secondaryColor);
       }
+      /* :hover {
+      
+        border-top: 2px solid var(--secondaryColor);
+      } */
     }
   }
 `;
 
 export const MobileStyles = styled.div`
-  background: blue;
-  position: absolute;
-  color: yellow;
-  width: 40%;
-  height: 300px;
-  z-index: 1;
-  left: 40;
-  top: 40;
-  z-index: 100;
   ul {
+    z-index: 1;
     display: flex;
     flex-direction: column;
-
-    /* margin-top: 10rem; */
     li {
       list-style: none;
       padding: 1.5rem;
       font-size: 1.7rem;
-      font-weight: 500;
-      color: red;
-      :hover {
-        color: yellow;
+      a {
+        color: white;
       }
     }
   }

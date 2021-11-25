@@ -1,31 +1,33 @@
 export const mobileNavStyles = {
   bmBurgerButton: {
     position: "fixed",
-    width: "36px",
-    height: "30px",
+    width: "20px",
+    height: "20px",
     left: "36px",
     top: "36px",
   },
   bmBurgerBars: {
-    background: "#dddddd",
+    background: "#AAAAAA",
   },
   bmBurgerBarsHover: {
     background: "#a90000",
   },
   bmCrossButton: {
-    height: "24px",
-    width: "24px",
+    height: "36px",
+    width: "36px",
   },
   bmCross: {
-    background: "#bdc3c7",
+    background: "#AAAAAA",
   },
   bmMenuWrap: {
     position: "fixed",
-    height: "50%",
-    width: "100%",
+    height: "100%",
+    width: "300px",
+    top: 0,
+    right: 0,
   },
   bmMenu: {
-    background: "#fff",
+    background: "#464545",
     padding: "2.5em 1.5em 0",
     fontSize: "1.15em",
   },
