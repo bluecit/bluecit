@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const AboutStyles = styled.div`
   .page_heading {
-    height: 30vh;
     padding: var(--paddingLayout);
     background: linear-gradient(40deg, rgb(237, 29, 127), rgba(3, 37, 108));
     background-size: cover;
@@ -17,14 +16,31 @@ const AboutStyles = styled.div`
   }
   .main_text {
     padding: var(--paddingLayout);
-    display: grid;
-    grid-template-columns: 50% 1fr;
-    gap: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 2rem;
   }
   .statement {
+    background: ${(props) => props.theme.background};
+    flex: 1 1 350px; //Stretching:
+    /* flex: 0 1 350px; //No stretching: */
+    margin: 1rem;
+    padding: 0 2rem;
     p {
       font-size: 1.7rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 610px) {
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.4rem;
     }
   }
 `;

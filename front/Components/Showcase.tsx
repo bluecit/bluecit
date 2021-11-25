@@ -63,6 +63,7 @@ const ShowcaseText = styled.div`
     } */
   }
   @media (max-width: 850px) {
+    width: 100% !important;
     h1 {
       font-size: 3rem;
     }
@@ -73,14 +74,13 @@ const ShowcaseText = styled.div`
   @media (max-width: 610px) {
     width: 100% !important;
     h1 {
-      font-size: 4rem;
+      font-size: 3rem;
     }
     p {
       display: none;
     }
   }
 `;
-const ShowcaseIcon = styled.div``;
 function Showcase() {
   return (
     <>

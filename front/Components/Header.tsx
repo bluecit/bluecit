@@ -34,7 +34,7 @@ const HeaderStyle = styled.div`
     color: var(--greyDark);
   }
   @media (max-width: 768px) {
-    justify-content: flex-end;
+    justify-content: space-evenly;
   }
 `;
 
@@ -56,7 +56,7 @@ function Header() {
   return (
     <HeaderStyle className={headerColor ? "active" : ""}>
       <Link href='/'>
-        <a style={{ paddingLeft: "2rem", paddingTop: "1rem" }}>
+        <a style={{ paddingLeft: "4rem", paddingTop: "1rem" }}>
           <Logo width='50%' fill={darkMode.value ? "white" : "#03256C"} />
         </a>
       </Link>

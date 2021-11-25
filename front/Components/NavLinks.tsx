@@ -28,10 +28,12 @@ export const MobileStyles = styled.div`
     z-index: 1;
     display: flex;
     flex-direction: column;
+    border: none;
     li {
       list-style: none;
-      padding: 1.5rem;
+      padding-bottom: 1rem;
       font-size: 1.7rem;
+
       a {
         color: white;
       }

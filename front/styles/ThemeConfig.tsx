@@ -23,7 +23,6 @@ html {
     --secondaryColor : #ED1D7F;
     --black: #000000;
     --grey:#AAAAAA;
-    --greyDark:#AAAAAA;
     --maxWidth:1200px;
     --bs: 'box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1)';
     --dark-color: #29313e;
@@ -41,11 +40,15 @@ html {
     padding:0;
     margin:0;
   
+ 
+    @media(max-width:1200px){
+      --paddingLayout:0 5rem;
+    }
     @media(max-width:1024px){
       --paddingLayout:0 2rem;
     }
-    @media(max-width:1200px){
-      --paddingLayout:0 5rem;
+    @media(max-width:350){
+      --paddingLayout:0 1rem;
     }
 }
 *,*:after, *:before {
