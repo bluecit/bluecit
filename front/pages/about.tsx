@@ -1,19 +1,7 @@
+import { HeadingText, PageHeading } from "@/styles/Page";
 import styled from "styled-components";
 
 const AboutStyles = styled.div`
-  .page_heading {
-    padding: var(--paddingLayout);
-    background: linear-gradient(40deg, rgb(237, 29, 127), rgba(3, 37, 108));
-    background-size: cover;
-    h1 {
-      color: var(--light_1);
-      font-size: 4rem;
-    }
-    .heading_text {
-      font-size: 2rem;
-      color: var(--light_1);
-    }
-  }
   .main_text {
     padding: var(--paddingLayout);
     display: flex;
@@ -27,6 +15,7 @@ const AboutStyles = styled.div`
     /* flex: 0 1 350px; //No stretching: */
     margin: 1rem;
     padding: 0 2rem;
+    border-radius: var(--borderRadius);
     p {
       font-size: 1.7rem;
     }
@@ -47,15 +36,15 @@ const AboutStyles = styled.div`
 const About = () => {
   return (
     <AboutStyles>
-      <div className='page_heading'>
+      <PageHeading>
         <h1>About Us</h1>
-        <p className='heading_text'>
+        <HeadingText>
           BlueCIT is a professional experienced and innovative internet security
           & Software development consulting fırm that is dedicated to provide
           high quality services, strategic solutions, technical consulting, and
           data protection to businesses and organizations.
-        </p>
-      </div>
+        </HeadingText>
+      </PageHeading>
       <div className='main_text'>
         <div className='statement'>
           <h1>Our Mission </h1>

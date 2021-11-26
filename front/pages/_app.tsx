@@ -11,10 +11,14 @@ const toggleIconStyle = {
   zIndex: 100,
 };
 function MyApp({ Component, pageProps }: AppProps) {
-  // const [isMounted, setIsMounted] = React.useState(false);
-  // React.useEffect(() => {
-  //   setIsMounted(true);
-  // }, []);
+  const [isMounted, setIsMounted] = React.useState(false);
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <ToggleThemeStateProvider>

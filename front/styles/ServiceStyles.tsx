@@ -23,7 +23,7 @@ export const ServiceStyles = styled.div`
   }
   .card {
     background: ${({ theme }) => theme.background};
-    border-radius: 7px;
+    border-radius: var(--borderRadius);
     display: grid;
     grid-template-columns: 30% 70% 1fr;
     /* border: 1px solid var(--secondaryColor); */

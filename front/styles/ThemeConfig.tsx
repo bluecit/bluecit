@@ -35,6 +35,7 @@ html {
     --grey_3: #333;
     --menu-font-size: 1.2rem;
     --paddingLayout:0 15rem;
+    --borderRadius: 7px;
     box-sizing: border-box;
     font-size: 62.5%;
     padding:0;
@@ -78,7 +79,7 @@ h1 {
     text-align: center;
     font-weight: 700;
     font-size: 4rem;
-    margin: 2rem;
+    margin: 1rem;
 }
 p{
   margin-bottom:1rem;
