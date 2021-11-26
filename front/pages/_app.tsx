@@ -23,7 +23,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ToggleThemeStateProvider>
       <GlobalStyles />
-      {/* <Page>{isMounted && <Component {...pageProps} />}</Page> */}
       <Page>
         <Component {...pageProps} />
       </Page>

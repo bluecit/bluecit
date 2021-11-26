@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Navigation from "./Navigation";
 import Link from "next/link";
 import Logo from "@/components/Logo";
@@ -40,6 +40,22 @@ const HeaderStyle = styled.div`
   }
 `;
 
+export const ThemeLink = styled.a`
+  animation: 1.5s ease 0s infinite beat;
+  cursor: pointer;
+  @keyframes beat {
+    0%,
+    50%,
+    100% {
+      transform: scale(1, 1);
+    }
+    30%,
+    80% {
+      transform: scale(0.92, 0.95);
+    }
+  }
+`;
+
 function Header() {
   const [headerColor, setHeaderColor] = React.useState(false);
   const { darkMode } = useToggle();
@@ -63,7 +79,9 @@ function Header() {
         </a>
       </Link>
       <Navigation />
-      <ToggleThemeIcon onClick={darkMode.toggle} size='40' />
+      <ThemeLink>
+        <ToggleThemeIcon onClick={darkMode.toggle} size='40' />
+      </ThemeLink>
     </HeaderStyle>
   );
 }
