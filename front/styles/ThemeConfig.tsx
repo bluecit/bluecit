@@ -6,12 +6,14 @@ export const darkTheme = {
   text: "#FAFAFA",
   toggleBorder: "#45526c",
   background: "#0c1e32",
+  showcaseText: "#ED1D7F",
 };
 export const lightTheme = {
   body: "#ecf0f3",
   text: "#6b6374",
   toggleBorder: "#828282",
   background: "#fff",
+  showcaseText: "#03256C",
 };
 
 export const GlobalStyles = createGlobalStyle<StyleProps>`
@@ -64,6 +66,8 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.5rem;
   line-height: 2;
+  /* max-width: 1400px; */
+  
 }
 
 a {
