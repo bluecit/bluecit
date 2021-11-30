@@ -1,6 +1,6 @@
 import Image from "next/image";
 import softwareImage from "@/public/images/software.jpg";
-
+import ServiceComponent from "@/components/services/Services";
 import {
   HeadingText,
   PageHeading,
@@ -19,25 +19,29 @@ const servicesContent = [
     title: "Software Development",
     description:
       "We develop cutting-edge, sophisticated applications that allow an interactive business environment, effective, efficient e-commerce space, and simplify transaction processes, by connecting customers to consumers using the latest technologies",
+    image: "/images/software.jpg",
   },
   {
     title: "Digital Transformation",
     description:
       "We assist to enhance organizational competitiveness, marketing strategy, operational management, and provide sustainable, transformative business solutions",
+    image: "/images/digital.jpg",
   },
   {
     title: "Vulnerability Management",
     description:
       "Our experts help you go beyond basic scanning, define key risk areas, analyze scan results with intelligence-driven context, customize reporting for clear visibility, and coordinate remediation activities",
+    image: "/images/Vulnerability.jpg",
   },
   {
     title: "Penetration Testing",
     description:
       "We perform simulated cyberattacks to gauge how effective your security systems are. During a penetration test, we will explore your system’s intrusion points, simulate server injections, bypass firewalls, and use exploits to assess your networks, websites and software’s vulnerabilities.",
+    image: "/images/penetration.jpg",
   },
 ];
 
-const Services = () => {
+const ServicesPage = () => {
   return (
     <>
       <PageHeading>
@@ -48,29 +52,19 @@ const Services = () => {
           primary services we offer to our clients.
         </HeadingText>
       </PageHeading>
-      <ServiceContainer>
-        <ImageStyle />
-        <Content>
-          <ServiceHeading></ServiceHeading>
-          <P>
-            We develop cutting-edge, sophisticated applications that allow an
-            interactive business environment, effective, efficient e-commerce
-            space, and simplify transaction processes, by connecting customers
-            to consumers using the latest technologies.
-          </P>
-        </Content>
-        <Content>
-          <ServiceHeading>Software Development</ServiceHeading>
-          <P>
-            We develop cutting-edge, sophisticated applications that allow an
-            interactive business environment, effective, efficient e-commerce
-            space, and simplify transaction processes, by connecting customers
-            to consumers using the latest technologies.
-          </P>
-        </Content>
-      </ServiceContainer>
+      <div>
+        {servicesContent.map((service, i) => (
+          <ServiceComponent
+            key={i}
+            title={service.title}
+            description={service.description}
+            image={service.image}
+            invert={i % 2 === 0}
+          />
+        ))}
+      </div>
     </>
   );
 };
 
-export default Services;
+export default ServicesPage;

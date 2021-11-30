@@ -5,7 +5,7 @@ import { People } from "@styled-icons/bootstrap/";
 import { ServiceStyles } from "@/styles/ServiceStyles";
 import { Network } from "@styled-icons/zondicons/";
 
-export default function Services() {
+export default function HomeServices() {
   return (
     <ServiceStyles className='services'>
       <h1>Our Services</h1>
