@@ -96,7 +96,7 @@ function Showcase() {
             businesses and organizations
           </p>
           <button className='btn'>
-            <Link href='/contacts'>Explore More</Link>
+            <Link href='/contacts'>Let's Talk</Link>
           </button>
         </ShowcaseText>
       </ShowcaseArea>

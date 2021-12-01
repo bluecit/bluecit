@@ -15,12 +15,34 @@ import {
   Steps,
 } from "antd";
 import styled from "styled-components";
-import { EmailOutline } from "@styled-icons/evaicons-outline/";
+import { EmailOutline as Out } from "@styled-icons/evaicons-outline/";
 
 const { Title } = Typography;
 const { Option } = Select;
 const { Step } = Steps;
 
+const EmailOutline = styled(Out)`
+  color: ${({ theme }) => theme.showcaseText};
+`;
+
+const CustomeForm = styled(Form)`
+  label {
+    color: ${({ theme }) => theme.showcaseText};
+    font-size: 1.5rem;
+  }
+`;
+const CustomeButton = styled(Button)`
+  display: block;
+  background: ${({ theme }) => theme.showcaseText};
+  color: var(--light_2);
+  width: 100%;
+  border: transparent;
+  border-radius: 6rem;
+  &:hover {
+    color: var(--light_1);
+    background: var(--grey);
+  }
+`;
 const formItemLayout = {
   labelCol: {
     xs: { span: 24 },
@@ -82,35 +104,31 @@ const Contacts = () => {
           services.
         </CustomeTitle>
         <EmailContainer>
-          <EmailOutline size='40' />
+          <EmailOutline size='35' />
           <Email>contact@bluecit.io</Email>
         </EmailContainer>
         <CustomeTitle level={3} border>
           Fill in our contact form
         </CustomeTitle>
-        <Form
+        <CustomeForm
           {...formItemLayout}
           form={form}
           style={{ display: "block", margin: "auto" }}
           size='large'
           layout='vertical'
-          name='register'
+          name='contact'
           onFinish={onFinish}
-          initialValues={{
-            residence: ["zhejiang", "hangzhou", "xihu"],
-            prefix: "86",
-          }}
           scrollToFirstError
         >
           <Form.Item
-            name='What can we help you with?'
+            name='what_can_we_help_you_with'
             label='What can we help you with? What can we help you with?'
             rules={[{ required: true, message: "This field is required" }]}
           >
             <Input.TextArea showCount maxLength={200} />
           </Form.Item>
           <Form.Item
-            name='budget'
+            name='what_is_your_budget'
             label='What is your budget? (US Dollars)'
             rules={[{ required: true, message: "Please select your budget" }]}
           >
@@ -165,11 +183,13 @@ const Contacts = () => {
           <Form.Item
             name='how_did_you_hear_bluecit'
             label='How did you hear about BlueCIT?'
-            style={{ color: "blue" }}
           >
             <Input.TextArea showCount maxLength={200} />
           </Form.Item>
-        </Form>
+          <CustomeButton type='primary' htmlType='submit'>
+            Send Message
+          </CustomeButton>
+        </CustomeForm>
       </Container>
     </>
   );

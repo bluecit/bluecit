@@ -93,16 +93,18 @@ p{
 .btn {
     border: none;
     /* margin: 2.5rem 0rem; */
-    padding: 1.5rem 4rem;
+    padding: 1.2rem 4rem;
     border-radius: 6rem;
-    font-size: 1.5rem;
-    background: transparent;
+    font-size: 2rem;
+
     margin-top:2rem;
     border: 1px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
     color: var(--secondaryColor);
     &:hover {
       color: var(--light_2);
-      background-color: var(--secondaryColor);
+      background: transparent;
+      
     }
   
 }`;
