@@ -75,7 +75,7 @@ export default function Footer() {
           <ul>
             <h4>About</h4>
             <li>
-              <a>BlueCIT</a>
+              <Link href='about'>BlueCIT</Link>
             </li>
             <li>
               <a>Careers</a>
@@ -89,7 +89,7 @@ export default function Footer() {
               <a>RAADI App</a>
             </li>
             <li>
-              <a>Services</a>
+              <Link href='/services'>Services</Link>
             </li>
           </ul>
         </div>
@@ -100,7 +100,7 @@ export default function Footer() {
               <a>Blog</a>
             </li>
             <li>
-              <a>Contact Us</a>
+              <Link href='/contacts'>Contact Us</Link>
             </li>
           </ul>
         </div>
