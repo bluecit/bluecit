@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
+
 import { StyleProps } from "@/components/TypeDefinations";
 export const darkTheme = {
   body: "#102338",
@@ -19,6 +20,7 @@ export const lightTheme = {
 export const GlobalStyles = createGlobalStyle<StyleProps>`
 
 html {
+  
     --mainColor:#0c1e32;
     --primaryColor: #03256C;
     --primaryColorDark: #011f5e;

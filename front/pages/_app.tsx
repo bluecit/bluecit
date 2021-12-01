@@ -3,6 +3,8 @@ import * as React from "react";
 import Page from "@/components/Page";
 import { ToggleThemeStateProvider } from "@/utils/globalState";
 import { GlobalStyles } from "@/styles/ThemeConfig";
+import "antd/dist/antd.css";
+// import "@/styles/antd.less";
 
 const toggleIconStyle = {
   position: "absolute",

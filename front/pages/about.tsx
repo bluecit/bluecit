@@ -1,6 +1,5 @@
-import { HeadingText, PageHeading } from "@/styles/Page";
 import styled from "styled-components";
-
+import PageHeading from "@/components/PageHeading";
 const AboutStyles = styled.div`
   .main_text {
     padding: var(--paddingLayout);
@@ -33,18 +32,15 @@ const AboutStyles = styled.div`
     }
   }
 `;
+
+const headerContent = {
+  title: "About Us",
+  text: "BlueCIT is a professional experienced and innovative internet security & Software development consulting fırm that is dedicated to provide high quality services, strategic solutions, technical consulting, and data protection to businesses and organizations.",
+};
 const About = () => {
   return (
     <AboutStyles>
-      <PageHeading>
-        <h1>About Us</h1>
-        <HeadingText>
-          BlueCIT is a professional experienced and innovative internet security
-          & Software development consulting fırm that is dedicated to provide
-          high quality services, strategic solutions, technical consulting, and
-          data protection to businesses and organizations.
-        </HeadingText>
-      </PageHeading>
+      <PageHeading title={headerContent.title} text={headerContent.text} />
       <div className='main_text'>
         <div className='statement'>
           <h1>Our Mission </h1>

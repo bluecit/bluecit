@@ -1,9 +1,8 @@
 import Image from "next/image";
 import softwareImage from "@/public/images/software.jpg";
 import ServiceComponent from "@/components/services/Services";
+
 import {
-  HeadingText,
-  PageHeading,
   ServiceContainer,
   ServiceHeading,
   ImageBox,
@@ -13,7 +12,12 @@ import {
 } from "@/styles/Page";
 
 import styled from "styled-components";
+import PageHeading from "@/components/PageHeading";
 
+const headingContent = {
+  title: "Our Services",
+  text: "Here at BlueCIT, We take the time to understand your cybersecurity challenges as well as your software requirements. Here are some of the primary services we offer to our clients.",
+};
 const servicesContent = [
   {
     title: "Software Development",
@@ -44,14 +48,7 @@ const servicesContent = [
 const ServicesPage = () => {
   return (
     <>
-      <PageHeading>
-        <h1>Our Services</h1>
-        <HeadingText>
-          Here at BlueCIT, We take the time to understand your cybersecurity
-          challenges as well as your software requirements. Here are some of the
-          primary services we offer to our clients.
-        </HeadingText>
-      </PageHeading>
+      <PageHeading title={headingContent.title} text={headingContent.text} />
       <div>
         {servicesContent.map((service, i) => (
           <ServiceComponent

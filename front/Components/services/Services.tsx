@@ -1,11 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
 import Image from "next/image";
+import { Themeisle } from "@styled-icons/fa-brands";
 
 export const Container = styled.div`
   padding: var(--paddingLayout);
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 5rem;
   margin-bottom: 5rem;
 `;
@@ -16,41 +18,45 @@ export const ContentSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  /* border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; */
   flex-direction: column;
   /* margin-bottom: 2rem; */
+  flex: 1 1 450px;
+  /* border-bottom: 1px solid #444; */
 `;
 
+// export interface Heading {
+//   color: boolean;
+// }
 export const Heading = styled.h2`
   font-size: 3rem;
   font-weight: 700;
-  padding: 1rem;
-  margin: 1rem;
+  /* color: ${(props) =>
+    props.color ? "var(--primaryColor)" : "var(--secondaryColor)"}; */
+  color: ${({ theme }) => theme.showcaseText};
 `;
 export const Paragraph = styled.p`
   font-size: 1.8rem;
   padding: 1rem;
-  margin: 1rem;
+  /* margin: 1rem; */
 `;
 
 export const Background = styled.div`
+  flex: 1 1 450px;
   display: block;
   height: 30%;
   width: 50%;
   overflow: hidden;
   z-index: -1;
   min-height: 100%;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 0, 150, 0.3),
-    rgba(255, 0, 150, 0.3)
-  );
-  background-blend-mode: multiply;
+  background: rgb(9, 9, 121);
   background-size: cover;
 
+  /* opacity: 0.3; */
+  /* 
   border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
+  border-top-left-radius: 5px; */
 `;
 
 const ServiceComponent: React.FC<{
@@ -67,7 +73,6 @@ const ServiceComponent: React.FC<{
   );
   //   textAlign={invert ? "left" : "right"} border elevation={1}
 
-  console.log({ title, description, image });
   const Right = () => (
     <Background>
       <Image

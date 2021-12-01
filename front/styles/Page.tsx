@@ -1,31 +1,5 @@
 import styled from "styled-components";
 
-export const PageHeading = styled.div`
-  padding: var(--paddingLayout);
-  background: linear-gradient(40deg, rgb(237, 29, 127), rgba(3, 37, 108));
-  background-size: cover;
-  h1 {
-    color: var(--light_1);
-    font-size: 4rem;
-  }
-  @media (max-width: 610px) {
-    h1 {
-      font-size: 2rem;
-    }
-  }
-`;
-
-export const HeadingText = styled.p`
-  font-size: 2rem;
-  color: var(--light_1);
-  padding: 1rem;
-  @media (max-width: 610px) {
-    p {
-      font-size: 1.4rem;
-    }
-  }
-`;
-
 export const ServiceContainer = styled.div`
   position: relative;
   padding: var(--paddingLayout);
