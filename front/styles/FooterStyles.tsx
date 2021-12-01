@@ -44,6 +44,7 @@ export const FooterStyles = styled.footer`
     h4 {
       text-transform: uppercase;
       font-size: 1.5rem;
+      color: ${({ theme }) => theme.showcaseText};
     }
   }
 

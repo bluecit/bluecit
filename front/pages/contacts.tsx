@@ -27,7 +27,8 @@ const EmailOutline = styled(Out)`
 
 const CustomeForm = styled(Form)`
   label {
-    color: ${({ theme }) => theme.showcaseText};
+    /* color: ${({ theme }) => theme.showcaseText}; */
+    color: ${({ theme }) => theme.text};
     font-size: 1.5rem;
   }
 `;
@@ -67,8 +68,7 @@ const Email = styled.p`
 `;
 
 const CustomeTitle = styled(Title)`
-  color: var(--light_3) !important;
-  border-bottom: ${({ border }) => (border ? "1px solid var(--light_2)" : "")};
+  color: ${({ theme }) => theme.text} !important;
   margin-bottom: 1rem;
 `;
 const headingContent = {
@@ -99,17 +99,17 @@ const Contacts = () => {
     <>
       <PageHeading title={headingContent.title} text={headingContent.text} />
       <Container>
-        <CustomeTitle level={5} border>
+        <CustomeTitle level={5}>
           Please email us with any questions you have about any of BlueCIT's
           services.
         </CustomeTitle>
+
         <EmailContainer>
           <EmailOutline size='35' />
           <Email>contact@bluecit.io</Email>
         </EmailContainer>
-        <CustomeTitle level={3} border>
-          Fill in our contact form
-        </CustomeTitle>
+        <Divider> OR</Divider>
+        <CustomeTitle level={3}>Fill in our contact form</CustomeTitle>
         <CustomeForm
           {...formItemLayout}
           form={form}
