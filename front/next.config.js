@@ -1,11 +1,27 @@
-/** @type {import('next').NextConfig} */
+// next.config.js
 module.exports = {
-  reactStrictMode: true,
-  typescript: {
-    // !! WARN !!
-    // Dangerously allow production builds to successfully complete even if
-    // your project has type errors.
-    // !! WARN !!
-    ignoreBuildErrors: true,
+  future: {
+    webpack5: true,
+  },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      // issuer: {
+      //   test: /\.(js|ts)x?$/,
+      // },
+      use: [
+        {
+          loader: "@svgr/webpack",
+          options: {
+            svgoConfig: {
+              plugins: {
+                removeViewBox: false,
+              },
+            },
+          },
+        },
+      ],
+    });
+    return config;
   },
 };
