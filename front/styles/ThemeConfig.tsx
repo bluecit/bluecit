@@ -74,7 +74,7 @@ body {
 
 a {
     text-decoration: none;
-    color:${({ theme }) => theme.text};
+    color:${({ theme }) => theme.showcaseText};
     &:hover {
     filter: brightness(-0.5);
   }
@@ -100,7 +100,7 @@ p{
     margin-top:2rem;
     border: 1px solid var(--secondaryColor);
     background-color: var(--secondaryColor);
-    color: var(--secondaryColor);
+    color: var(--light_1) ;
     &:hover {
       color: var(--light_2);
       background: transparent;

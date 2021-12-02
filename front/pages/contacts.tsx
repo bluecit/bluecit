@@ -100,8 +100,7 @@ const Contacts = () => {
       <PageHeading title={headingContent.title} text={headingContent.text} />
       <Container>
         <CustomeTitle level={5}>
-          Please email us with any questions you have about any of BlueCIT's
-          services.
+          Please email us with any questions you have about any of our services.
         </CustomeTitle>
 
         <EmailContainer>

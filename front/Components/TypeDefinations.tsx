@@ -4,5 +4,6 @@ export interface StyleProps {
     text: string;
     toggleBorder: string;
     background: string;
+    showcaseText: string;
   };
 }

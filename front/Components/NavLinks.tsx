@@ -48,7 +48,7 @@ const NavLinks = () => {
         <Link href='/about'>About Us </Link>
       </li>
       <li>
-        <Link href='/products'>Products</Link>
+        <Link href='#'>Products</Link>
       </li>
       <li>
         <Link href='/services'>Services</Link>
