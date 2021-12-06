@@ -74,7 +74,7 @@ body {
 
 a {
     text-decoration: none;
-    color:${({ theme }) => theme.showcaseText};
+    color:var(---grey_2);
     &:hover {
     filter: brightness(-0.5);
   }

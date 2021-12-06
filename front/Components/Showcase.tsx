@@ -95,9 +95,9 @@ function Showcase() {
             strategic solutions, technical consulting, and data protection to
             businesses and organizations
           </p>
-          <a className='btn'>
+          <span className='btn'>
             <Link href='/contacts'>Contact Us</Link>
-          </a>
+          </span>
         </ShowcaseText>
       </ShowcaseArea>
       {/* <div className='box'>
