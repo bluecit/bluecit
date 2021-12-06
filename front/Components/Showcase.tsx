@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
-import WaverySVG from "@/components/Wavery";
+
 const SVGStyles = styled.svg`
   width: 100%;
   background: cover;
