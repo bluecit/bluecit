@@ -2,9 +2,9 @@ import * as React from "react";
 import styled from "styled-components";
 import Navigation from "./Navigation";
 import Link from "next/link";
-// import Logo from "./BluecitLogo";
+import Logo from "./BluecitLogo";
 import { DarkTheme as ToggleThemeIcon } from "@styled-icons/fluentui-system-filled";
-import { useToggle } from "utils/globalState";
+import { useToggle } from "../utils/globalState";
 
 const HeaderStyle = styled.div`
   height: 90px;
@@ -75,8 +75,7 @@ function Header() {
     <HeaderStyle className={headerColor ? "active" : ""}>
       <Link href='/'>
         <a style={{ paddingLeft: "4rem", paddingTop: "1rem" }}>
-          {/* <Logo width='50%' fill={darkMode.value ? "white" : "#03256C"} /> */}
-          <h2>BlueCIT</h2>
+          <Logo width='50%' fill={darkMode.value ? "white" : "#03256C"} />
         </a>
       </Link>
       <Navigation />

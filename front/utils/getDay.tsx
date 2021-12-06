@@ -27,12 +27,3 @@ const maalin = maalmaha[day];
 
 export const globalMessage = `Have a wonderful ${today}!`;
 export const somaliMessage = `${maalin} Wanaagsan!`;
-
-//ipinfo.io
-// http: fetch("https://api.ipregistry.co/?key=tryout")
-//   .then(function (response) {
-//     return response.json();
-//   })
-//   .then(function (payload) {
-//     console.log(payload.location.country.name + ", " + payload.location.city);
-//   });

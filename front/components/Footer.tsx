@@ -10,7 +10,7 @@ import {
 import { EmailOutline } from "@styled-icons/evaicons-outline/";
 import { somaliMessage, globalMessage } from "../utils/getDay";
 import { useToggle } from "../utils/globalState";
-// import Logo from "./BluecitLogo";
+import Logo from "./BluecitLogo";
 import styled from "styled-components";
 
 export interface CountryTypes {
@@ -39,22 +39,18 @@ export default function Footer() {
   const [countMessage, setCountMessage] = React.useState(0);
   const [country, setCountry] = React.useState<string | null>(null);
   const messages = [globalMessage, somaliMessage];
-  // const fetchData = async () => {
-  //   const res = await fetch(
-  //     `https://ipinfo.io?token=${process.env.NEXT_PUBLIC_IPINFO_TOKEN}`
-  //   );
-  //   const countryData = await res.json();
-  //   if (countryData) {
-  //     setCountry(countryData.country);
-  //   }
-  //   return countryData;
-  // };
+  const fetchData = async () => {
+    const res = await fetch(
+      `https://ipinfo.io?token=${process.env.NEXT_PUBLIC_IPINFO_TOKEN}`
+    );
+    const countryData = await res.json();
+    if (countryData) {
+      setCountry(countryData.country);
+    }
+    return countryData;
+  };
   React.useEffect(() => {
-    // setInterval(() => {
-    //   let currentIdx = countMessage;
-    //   setCountMessage(currentIdx + 1);
-    // }, 5000);
-    // fetchData();
+    fetchData();
   }, []);
   const { darkMode } = useToggle();
 
@@ -63,8 +59,7 @@ export default function Footer() {
       <div className='footer'>
         <div>
           <a>
-            {/* <Logo width='52%' fill={darkMode.value ? "white" : "#03256C"} /> */}
-            <h2>BlueCIT</h2>
+            <Logo width='52%' fill={darkMode.value ? "white" : "#03256C"} />
           </a>
 
           <ContactStyle>
