@@ -9,24 +9,6 @@
         "preprocess": false,
         "displayName": true
       }
-    ],
-    [
-      "inline-react-svg",
-      {
-        "root": "./",
-        "alias": {
-          "svgs": "svgs"
-        }
-      }
-    ],
-    [
-      "module-resolver",
-      {
-        "root": ["./"],
-        "alias": {
-          "svgs": "svgs"
-        }
-      }
     ]
   ]
 }

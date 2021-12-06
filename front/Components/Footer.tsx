@@ -10,7 +10,7 @@ import {
 import { EmailOutline } from "@styled-icons/evaicons-outline/";
 import { somaliMessage, globalMessage } from "@/utils/getDay";
 import { useToggle } from "@/utils/globalState";
-import Logo from "./Logo";
+// import Logo from "./BluecitLogo";
 import styled from "styled-components";
 
 export interface CountryTypes {
@@ -63,7 +63,8 @@ export default function Footer() {
       <div className='footer'>
         <div>
           <a>
-            <Logo width='52%' fill={darkMode.value ? "white" : "#03256C"} />
+            {/* <Logo width='52%' fill={darkMode.value ? "white" : "#03256C"} /> */}
+            <h2>BlueCIT</h2>
           </a>
 
           <ContactStyle>
