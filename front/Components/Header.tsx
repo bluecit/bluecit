@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import Navigation from "./Navigation";
 import Link from "next/link";
-import Logo from "@/components/Logo";
+import Logo from "./BluecitLogo";
 import { DarkTheme as ToggleThemeIcon } from "@styled-icons/fluentui-system-filled";
 import { useToggle } from "@/utils/globalState";
 
