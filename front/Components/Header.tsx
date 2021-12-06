@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 import Link from "next/link";
 // import Logo from "./BluecitLogo";
 import { DarkTheme as ToggleThemeIcon } from "@styled-icons/fluentui-system-filled";
-import { useToggle } from "@/utils/globalState";
+import { useToggle } from "utils/globalState";
 
 const HeaderStyle = styled.div`
   height: 90px;

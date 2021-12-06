@@ -1,7 +1,6 @@
-import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
-import { StyleProps } from "@/components/TypeDefinations";
+import { StyleProps } from "components/TypeDefinations";
 export const darkTheme = {
   body: "#102338",
   text: "#FAFAFA",

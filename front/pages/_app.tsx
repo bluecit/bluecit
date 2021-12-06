@@ -1,9 +1,9 @@
 import type { AppProps } from "next/app";
 import * as React from "react";
-import Page from "@/components/Page";
-import { ToggleThemeStateProvider } from "@/utils/globalState";
-import withData from "@/utils/withData";
-import { GlobalStyles } from "@/styles/ThemeConfig";
+import Page from "components/Page";
+import { ToggleThemeStateProvider } from "utils/globalState";
+import withData from "utils/withData";
+import { GlobalStyles } from "styles/ThemeConfig";
 import "antd/dist/antd.css";
 // import "@/styles/antd.less";
 

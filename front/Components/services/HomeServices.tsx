@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Code } from "@styled-icons/entypo/";
 import { Transform, Security } from "@styled-icons/material-twotone/";
-import { People } from "@styled-icons/bootstrap/";
-import { ServiceStyles } from "@/styles/ServiceStyles";
+
+import { ServiceStyles } from "styles/ServiceStyles";
 import { Network } from "@styled-icons/zondicons/";
 
 export default function HomeServices() {

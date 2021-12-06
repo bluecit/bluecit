@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import PageHeading from "@/components/PageHeading";
+import PageHeading from "components/PageHeading";
 const AboutStyles = styled.div`
   .main_text {
     padding: var(--paddingLayout);

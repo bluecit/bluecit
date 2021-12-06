@@ -1,5 +1,5 @@
-import Services from "@/components/services/HomeServices";
-import Showcase from "@/components/Showcase";
+import Services from "components/services/HomeServices";
+import Showcase from "components/Showcase";
 
 const Home = () => {
   return (

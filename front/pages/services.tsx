@@ -1,18 +1,6 @@
-import Image from "next/image";
-import softwareImage from "@/public/images/software.jpg";
-import ServiceComponent from "@/components/services/Services";
+import ServiceComponent from "components/services/Services";
 
-import {
-  ServiceContainer,
-  ServiceHeading,
-  ImageBox,
-  ImageStyle,
-  Content,
-  P,
-} from "@/styles/Page";
-
-import styled from "styled-components";
-import PageHeading from "@/components/PageHeading";
+import PageHeading from "components/PageHeading";
 
 const headingContent = {
   title: "Our Services",
