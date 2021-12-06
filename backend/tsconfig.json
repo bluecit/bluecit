@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "jsx": "react",
     "module": "commonjs",
     "strict": true,
     "noEmit": true,
