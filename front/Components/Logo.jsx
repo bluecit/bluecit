@@ -1,4 +1,4 @@
-function SvgComponent(props: any) {
+function SvgComponent(props) {
   return (
     <svg
       viewBox='0 0 210 70'
