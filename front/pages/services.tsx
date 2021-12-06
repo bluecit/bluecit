@@ -1,6 +1,6 @@
-import ServiceComponent from "components/services/Services";
+import ServiceComponent from "../components/services/Services";
 
-import PageHeading from "components/PageHeading";
+import PageHeading from "../components/PageHeading";
 
 const headingContent = {
   title: "Our Services",

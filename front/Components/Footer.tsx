@@ -8,8 +8,8 @@ import {
   InstagramWithCircle,
 } from "@styled-icons/entypo-social/";
 import { EmailOutline } from "@styled-icons/evaicons-outline/";
-import { somaliMessage, globalMessage } from "utils/getDay";
-import { useToggle } from "utils/globalState";
+import { somaliMessage, globalMessage } from "../utils/getDay";
+import { useToggle } from "../utils/globalState";
 // import Logo from "./BluecitLogo";
 import styled from "styled-components";
 
